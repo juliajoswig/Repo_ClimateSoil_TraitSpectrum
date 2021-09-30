@@ -1,0 +1,120 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww33280\viewh23540\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+# ----------------------------------------------------------------------\
+# Code and Data availability README\
+# ----------------------------------------------------------------------\
+\
+# Julia Joswig\
+# 26.09.2021\
+\
+This README describes the code and data to reproduce the key results of
+\fs22  
+\fs24 "Climatic and soil factors explain the two-dimensional1spectrum of global plant trait variation", published as Joswig et al. in Nature Ecology and Evolution. All code/data files are made available in this repository. \
+\
+Code availability: We provide all code to reproduce the main results and all figures and Extended Data figures of the main paper.\
+Data availability: We provide all files/data needed to reproduce the study's results as well as all intermediate data. This includes the BHPMF-predicted trait data, geo-reference data, categorical data (provideded by TRY). Due to storage and copyright constraints, original/raw TRY trait data, soil and climate data files have to be downloaded from their original sources.\
+\
+This README file contains:\
+\
+1. Directory and Data Structure \
+2. Model building by Ridge Regression and Hierarchical Partitioning.\
+3. Reproduction of Figures\
+\pard\pardeftab720\partightenfactor0
+\cf2 4. Processing data from original sources\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\
+\
+1. Directory Structure \
+# ----------------------------------------------------------------------\
+\
+/scripts: Contains code/scripts run scripts and to produce figures 1 to 4, as well as the table 1.\
+/data: Contains all intermediate data to reproduce the study's results. This includes master_matrix with the merged trait, soil and climate data added with categorical information derived from TRY on two aggregation levels (Species per ecoregion and Ecoregion).\
+/figures: Contains the figures 1 to 4.\
+/tables: Contains the table output shown in the manuscript.\
+\
+1.1. Directory Structure Details on Scripts:\
+\
+/scripts/Main.R: Defines the data path and thus should always be run first. Calls all functions and installs packages. It can run the ridge regression, hierarchical partitioning, and produce figures 1 to 4.\
+\pard\pardeftab720\partightenfactor0
+\cf2 /scripts/_support_functions:  Includes useful functions for figures e.g. colour definitions and renaming of traits and climate and soil variables. Are called from the Main.R script.\
+/scripts/01_analysis_functions:   This folder includes the scripts for Ridge Regression and hierarchical partitioning. All scripts included in this folder are called from Main.R.\
+/scripts/01_analysis_functions/1_Model_Building: Loads the input data (X2.RData), prepares the chunks (random samples) to enter each of the 50 repetitions. Calls Ridge Regression from /scripts/01_analysis_functions/RidgeRegression/RidgeRegression.R. All scripts included in this folder are called from Main.R. \
+/scripts/01_analysis_functions/2_Model_Building: Loads RR output, prepares data for Hierarchical partitioning and saves results. All scripts included in this folder are called from Main.R. \
+/scripts/02_figure_functions:  This folder includes the scripts for producing figures 1 to 4, as well as tables 1 and Supplement table 9.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\partightenfactor0
+\cf2 1.2. Directory Structure Details on Data:\
+\
+/data: Contains all input and result data.\
+/data/master_matrix: Contains all input data on two levels of aggregation: species median per ecoregion \'93X1.RData\'94 and ecoregion median of X1: \'93X2.RData\'94\
+X1 - input for figure 1a,1b, Extended Data Figure 1\
+X2 - input for figure 4a,4b\
+/data/_results/RidgeRegression: Contains the ridge regression run outputs (r2) for trait predictions by soil, climate and soil and climate data as input.\
+/data/_results/HierarchicalPartitioning/_RidgeRegression_results : Contains the main results of Hierarchical Partitioning of the Ridge Regression outputs and serves as the input for figures 3a, 3b\
+/data/_results/helper_files : Contains a file on selected ecoregion (based on selection criterion), Ecoregion shape files, calculated kernel window sizes and spatial data.\
+\
+1.3. Directory Structure Details on Figures:\
+\
+/figures: contains all processed figures as in the manuscript. \
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 2. Model building by Ridge Regression and Hierarchical Partitioning.\
+# ----------------------------------------------------------------------\
+\
+To reproduce analyses, open Main.R, input your directory in line 19 and run Main.R. \
+For the script functions, see the scripts in /scripts/01_analsis_functions. \
+Additionally all raw results are already contained in the data directory /data/_results/.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\
+\
+3. Reproduction of Figures:\
+# ----------------------------------------------------------------------\
+\
+To reproduce figures, open Main.R, input your directory in line 19 and run Main.R.  \
+If you do not want to run the analysis, skip lines 28 to 43. \
+\pard\pardeftab720\partightenfactor0
+\cf2 For the script functions, see the scripts in /scripts/02_figure_functions. \
+\pard\pardeftab720\partightenfactor0
+\cf2 Additionally all raw figures are already contained in each figure directory as .pdf files.\
+\
+\
+\
+4. Processing data from original sources\
+# ----------------------------------------------------------------------\
+\
+To process all data from their original source requires to download all original daily data from:\
+\pard\pardeftab720\partightenfactor0
+\cf2 * Trait data: TRY (www.try-db.org, accession date July 2017, request nb.3282)\
+* Climate data: WorldClim is publicly available via https://www.worldclim.org/ (accession date: May 2018), \
+* Soil data: SoilGrids (soilgrids.org, accession date: June 2018) is publicly available\
+* Ecoregions: of Olson et al. 2001 Shapefiles are publicly available (accession date January 2014, https://www.sciencebase.gov/catalog/item/508fece8e4b0a1b43c29ca22)\
+* Estimate of species richness per ecoregion: Kier species richness (accession date January 2014, https://databasin.org/datasets/43478f840ac84173979b22631c2ed672/)\
+\pard\pardeftab720\partightenfactor0
+\cf2 (as specified in Methods).\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 Following the download of data above, they were merged based on the geo-references of the trait observations.\
+Then Species median per ecoregion aggregations were done, resulting in \'93X1.RData\'94\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\
+\
+\
+\
+\
+\
+\
+}
