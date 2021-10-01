@@ -25,17 +25,7 @@ plot_Figure_3b <- function(origin,nruns,doPCA){
   hp_now <- hp_l[[which(names(hp_l)%in%climOsoil)]]
   title <- "" 
   
-  # rename & order
-  ix <- match(target_order1,colnames(hp_now[[1]]))
-  colnames(hp_now[[1]]) <- Rename_Vars(colnames(hp_now[[1]]))[,3]
-  colnames(hp_now[[2]]) <- Rename_Vars(colnames(hp_now[[2]]))[,3]
-  colnames(hp_now[[3]]) <- Rename_Vars(colnames(hp_now[[3]]))[,3]
-  
-  hp_now[[1]] <- hp_now[[1]][,ix]
-  hp_now[[2]] <- hp_now[[2]][,ix]
-  hp_now[[3]] <- hp_now[[3]][,ix]
-  
-  
+
   # data processing
       m <- matrix(NA,ncol=4,nrow=ncol(hp_now[[3]]))
       m[,1] <- Rename_Vars(colnames(hp_now[[3]]))[,3]
@@ -45,10 +35,17 @@ plot_Figure_3b <- function(origin,nruns,doPCA){
       m[,4] <- colMeans(hp_now[[1]] - hp_now[[3]])*100# pure indep effect
       m[m<0]  = 0
       
+          
   colnames(m)<- c("Item","Independent_climate","Joint","Independent_soil")
   df <- data.frame(m)
   df <- transform(df,Independent_climate=as.numeric(as.vector(Independent_climate)),
                   Independent_soil=as.numeric(as.vector(Independent_soil)),Joint=as.numeric(as.vector(Joint)))
+
+  # rename & order
+  ix <- match(target_order1,df$Item)
+  df$Item[ix]
+  df <- df[ix,]
+  df$Item <- Rename_Vars(df$Item)[,3]
   
   dfs <- likert(summary = df)#,grouping = put_into_traitGroup(colnames(hp_now$r2_soil)))
   str(dfs)

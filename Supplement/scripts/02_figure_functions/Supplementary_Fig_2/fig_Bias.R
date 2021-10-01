@@ -40,16 +40,7 @@ output_term="bias1"#OR
     hp_now <- hp_l[[which(names(hp_l)%in%climOsoil)]]
     title <- ""
     
-    # rename & order
-    ix <- match(target_order1,colnames(hp_now[[1]]))
-    colnames(hp_now[[1]]) <- Rename_Vars(colnames(hp_now[[1]]))[,3]
-    colnames(hp_now[[2]]) <- Rename_Vars(colnames(hp_now[[2]]))[,3]
-    colnames(hp_now[[3]]) <- Rename_Vars(colnames(hp_now[[3]]))[,3]
-    
-    hp_now[[1]] <- hp_now[[1]][,ix]
-    hp_now[[2]] <- hp_now[[2]][,ix]
-    hp_now[[3]] <- hp_now[[3]][,ix]
-    
+
   # data processing
       m <- matrix(NA,ncol=4,nrow=ncol(hp_now[[3]]))
       m[,1] <- colnames(hp_now[[3]])
@@ -66,6 +57,12 @@ output_term="bias1"#OR
                   Joint=as.numeric(as.vector(Joint)))
 
       
+  # rename & order
+  ix <- match(target_order1,df$Item)
+  df$Item[ix]
+  df <- df[ix,]
+  df$Item <- Rename_Vars(df$Item)[,3]
+  
   dfs <- likert(summary = df)
   str(dfs)
   #The items are not present, but the likert object can still be summarised:
@@ -83,6 +80,7 @@ output_term="bias1"#OR
   out$dfs <- dfs
   out$target.order <-  Rename_Vars(target_order1)[,3]
   
+  list.files(file.path(origin,"figures"))
   if(output_term=="bias1"){pdf(file=file.path(origin,"figures","Supplement_Fig_2",paste0("Supplement_Fig_2a.pdf")))  }
   if(output_term=="bias2"){pdf(file=file.path(origin,"figures","Supplement_Fig_2",paste0("Supplement_Fig_2b.pdf")))  }
   if(output_term=="bias3"){pdf(file=file.path(origin,"figures","Supplement_Fig_2",paste0("Supplement_Fig_2c.pdf")))  }

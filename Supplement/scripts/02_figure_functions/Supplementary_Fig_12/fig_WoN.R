@@ -28,15 +28,7 @@ list.files(file.path(origin, "data", "_results","RidgeRegression"))
     hp_now <- hp_l[[which(names(hp_l)%in%climOsoil)]]
     title <- ""
     
-    # rename & order
-    ix <- match(target_order1,colnames(hp_now[[1]]))
-    colnames(hp_now[[1]]) <- Rename_Vars(colnames(hp_now[[1]]))[,3]
-    colnames(hp_now[[2]]) <- Rename_Vars(colnames(hp_now[[2]]))[,3]
-    colnames(hp_now[[3]]) <- Rename_Vars(colnames(hp_now[[3]]))[,3]
-    
-    hp_now[[1]] <- hp_now[[1]][,ix]
-    hp_now[[2]] <- hp_now[[2]][,ix]
-    hp_now[[3]] <- hp_now[[3]][,ix]
+
     
   # data processing
       m <- matrix(NA,ncol=4,nrow=ncol(hp_now[[3]]))
@@ -53,6 +45,12 @@ list.files(file.path(origin, "data", "_results","RidgeRegression"))
                         Independent_soil=as.numeric(as.vector(Independent_soil)),
                         Joint=as.numeric(as.vector(Joint)))
 
+  # rename & order
+  ix <- match(target_order1,df$Item)
+  df$Item[ix]
+  df <- df[ix,]
+  df$Item <- Rename_Vars(df$Item)[,3]
+        
   dfs <- likert(summary = df)
   str(dfs)
   #The items are not present, but the likert object can still be summarised:
