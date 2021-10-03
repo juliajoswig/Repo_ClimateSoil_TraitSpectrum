@@ -3,7 +3,7 @@
 
 nruns=50
 output_term="climLat"
-output_term="soilLat"
+#output_term="soilLat"
 doPCA=TRUE
 climOsoil="soilAclimate"
 
@@ -27,15 +27,6 @@ if(!file.exists(file.path(origin,"figures","Supplement_Fig_11"))){
     hp_now <- hp_l[[which(names(hp_l)%in%climOsoil)]]
     title <- ""
     
-    # rename & order
-    ix <- match(target_order1,colnames(hp_now[[1]]))
-    colnames(hp_now[[1]]) <- Rename_Vars(colnames(hp_now[[1]]))[,3]
-    colnames(hp_now[[2]]) <- Rename_Vars(colnames(hp_now[[2]]))[,3]
-    colnames(hp_now[[3]]) <- Rename_Vars(colnames(hp_now[[3]]))[,3]
-    
-    hp_now[[1]] <- hp_now[[1]][,ix]
-    hp_now[[2]] <- hp_now[[2]][,ix]
-    hp_now[[3]] <- hp_now[[3]][,ix]
     
   # data processing
       m <- matrix(NA,ncol=4,nrow=ncol(hp_now[[3]]))
@@ -61,11 +52,20 @@ if(!file.exists(file.path(origin,"figures","Supplement_Fig_11"))){
                     Independent_soil=as.numeric(as.vector(Independent_soil)),
                     Joint=as.numeric(as.vector(Joint)))
   }
-  dfs <- likert(summary = df)
-  str(dfs)
-  #The items are not present, but the likert object can still be summarised:
-  summary(dfs)
+      # rename & order
+      ix <- match(target_order1,df$Item)
+      df$Item[ix]
+      df <- df[ix,]
+      df$Item <- Rename_Vars(df$Item)[,3]
+      
+      
+      dfs <- likert(summary = df)
+      str(dfs)
+    #The items are not present, but the likert object can still be summarised:
+      summary(dfs)
   #Plots
+  
+  
   
   scale_height = knitr::opts_chunk$get('fig.height')*2.5
   scale_width = knitr::opts_chunk$get('fig.width')*.7
