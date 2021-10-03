@@ -56,15 +56,15 @@
   colnames(r2_) <- Rename_Vars(colnames(r2_))[,3]
   colnames(r2_NOsel) <- Rename_Vars(colnames(r2_NOsel))[,3]
   
-  pdf(file=file.path(origin,"figures","Supplement_Fig_3",paste0("figure_S_SelAggComparison.pdf")),height=3.5,width=5)
+  pdf(file=file.path(origin,"figures","Supplement_Fig_3",paste0("figure_S_SelAggComparison.pdf")),height=4,width=5)
   par(mfrow=c(1,1),mar=c(6,5,1,1))
-    barplot(colMeans(r2_)-colMeans(r2_NOsel),col=color_to_traits(nms),ylim=c(-.3,.3),las=2,cex.lab=.8,
-          ylab="r2 dist (selected, non-selected)")
+    barplot(colMeans(r2_)-colMeans(r2_NOsel),col=color_to_traits(nms),ylim=c(-.3,.3),las=2,cex.lab=1,
+          ylab="R2 dist (sel., non-sel.)")
     abline(h = seq(from=-.4,to = .4,by = .1),lty=2,col="gray")
     barplot(colMeans(r2_)-colMeans(r2_NOsel),col=color_to_traits(nms),ylim=c(-.3,.3),las=2,add=TRUE)
     
-    barplot(colMeans(r2_NOsel)-colMeans(r2_grid),col=color_to_traits(nms),las=2,ylim=c(-.3,.3),cex.lab=.8,
-            ylab="r2 dist (non-sel. ER, non-sel. grid)")
+    barplot(colMeans(r2_NOsel)-colMeans(r2_grid),col=color_to_traits(nms),las=2,ylim=c(-.3,.3),cex.lab=1,
+            ylab="R2 dist (non-sel. ER, non-sel. grid)")
     abline(h = seq(from=-.4,to = .4,by = .1),lty=2,col="gray")
     barplot(colMeans(r2_NOsel)-colMeans(r2_grid),col=color_to_traits(nms),ylim=c(-.3,.3),las=2,add=TRUE)
 
