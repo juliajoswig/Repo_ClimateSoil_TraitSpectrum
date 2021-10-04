@@ -1,0 +1,182 @@
+plot_Figure_2 <- function(origin){
+  
+  require("dplyr")
+  
+  output_term = "" 
+  
+  library(vegan)
+  library(ks) 
+  library(stats) 
+  library(grDevices)
+  library(calibrate)
+  require(FactoMineR)
+
+  
+  # load PCA
+  load(file.path(origin,"data","helper_files","fig_2","PCA.RData"))
+  load(file.path(origin,"data","helper_files","fig_2","PCA_lat.RData"))
+  load(file.path(origin,"data","helper_files","fig_2","Lat.RData"))
+  if(!dir.exists(file.path(origin,"figures","figure_2"))){
+    dir.create(file.path(origin,"figures","figure_2"))}
+  #----------------------------------------------------------------------------
+  # plot the PC1 against absolute latitude
+  #----------------------------------------------------------------------------
+  { 
+    pdf(file=file.path(origin,"figures","figure_2","Figure_2.pdf"),width = 20,height = 8)
+    par(mfrow=c(1,2),mar=c(6,6,2,2))
+    
+    load(file.path(origin,"data","helper_files","fig_2","H_PC1.RData"))
+    load(file.path(origin,"data","helper_files","fig_2","est_PC1.RData"))
+    est1=est
+    sc <-cbind(abs(Lat),pca_FMr$ind$coord[,1]) #scores(env.pca, choices=c(1,2), display=c("species"))  
+    sc1=sc
+    dat1 <- data.frame(sc1)
+    names(dat1) <- c("lat","PC")
+    
+    lm1 <- lm(PC~lat,data = dat1)
+    lm1_agg <- lm(coord.Dim.1~Group.1,data = PCA_lat)
+    
+    # set contour probabilities for drawing contour levels
+    cl <- contourLevels(est, prob=c(0.5, 0.05, 0.001), approx=TRUE)
+    
+    de_fit.m <- data.frame(matrix(data=NA,nrow=17,ncol=4))
+    de_fit.m[,1] <- pca_FMr$var$coord[,1]
+    de_fit.m[,2] <- pca_FMr$var$coord[,2]
+    
+    
+    rownames(de_fit.m) <- rownames(pca_FMr$var$coord)
+    colnames(de_fit.m) <- c("PC1","PC2","r2","Pr(>1)")
+    # arrows
+    act.place.x <- vector(mode="numeric",length=nrow(de_fit.m))
+    act.place.y <- vector(mode="numeric",length=nrow(de_fit.m))
+    de_fit.m <- cbind(de_fit.m,act.place.x,act.place.y)
+    
+    
+    ylab_now=paste0("PCA axis 1")
+    xlab_now="Absolute latitude"
+    plot(est, cont=seq(1,100,by=2), 
+         display="filled.contour2", add=FALSE, cex.axis=2,cex.lab=2.5,
+         ylab=ylab_now,xaxt="n",
+         xlab="",
+         xlim=c(0,85),
+         ylim=c(-8,6)
+    )
+    ## add the tick
+    axis(1, at = seq(from=0,to=85,by = 20), label = rep("",5) , tck = -0.02,cex.lab=3)
+    ## add the labels
+    axis(1, at = seq(from=0,to=85,by = 20), lwd = 0, cex.axis = 0.9,cex.axis=2,line=1)
+    ## add the xlab
+    axis(side = 1,at=45,
+         labels = xlab_now,tick = FALSE,
+         cex.axis=3,line = 3.5)
+    
+    plot(est,abs.cont=cl[1], labels=c(0.5),labcex=1, add=TRUE, lwd=2,lty=2, col= "dimgray")
+    plot(est,abs.cont=cl[2], labels=c(0.8),labcex=1, add=TRUE, lwd=1.5,lty=3, col= "dimgray")
+    plot(est,abs.cont=cl[3], labels=c(0.95),labcex=1, add=TRUE, lwd=.5,lty = 3, col= "dimgray")
+    
+    points(PCA_lat$Group.1,PCA_lat$coord.Dim.1,pch=16,cex=2,col="white")
+    points(PCA_lat$Group.1,PCA_lat$coord.Dim.1,pch=16,cex=1.5)
+    
+    abline(lm1_agg,col="black",lwd=3)
+    
+    smr_lm1 <- summary(lm1)
+    r2 = expression('r'^2* "=")
+    text(x = 70,y = 5,labels = r2,cex=2,col = "gray")
+    text(x = 77,y = 5,labels = round(smr_lm1$adj.r.squared,digits = 2),cex=2,col = "gray")
+    smr_lm1_agg <- summary(lm1_agg)
+    text(x = 70,y = 4,labels = r2,cex=2)
+    text(x = 77,y = 4,labels = round(smr_lm1_agg$adj.r.squared,digits = 2),cex=2)
+    
+    #----------------------------------------------------------------------------
+    # plot the PC2 against absolute latitude
+    #----------------------------------------------------------------------------
+    load(file.path(origin,"data","helper_files","fig_2","H_PC2.RData"))
+    load(file.path(origin,"data","helper_files","fig_2","est_PC2.RData"))
+    
+    est2=est
+    sc <-cbind(abs(Lat),pca_FMr$ind$coord[,2])
+    sc2 <- sc
+    dat2 <- data.frame(sc2)
+    names(dat2) <- c("lat","PC")
+    
+    lm1 <- lm(PC~lat,data = dat2)
+    lm1_agg <- lm(coord.Dim.2~Group.1,data = PCA_lat)
+    
+    
+    names(dat2) <- c("lat","PC")
+    lm2 <- lm(PC~lat,data = dat2)
+    lm2_agg <- lm(coord.Dim.2~Group.1,data = PCA_lat)
+    
+    #------------------------- 
+    # calculate non-linear regression
+    #segmented linear regression
+    #install.packages("segmented")
+    library(segmented)
+    
+    xx <- PCA_lat$Group.1
+    yy2 <- PCA_lat$coord.Dim.2
+    dati <- data.frame(x = xx,  y2 = yy2)
+    out.lm <- lm(y2 ~ x, data = dati)
+    o <- segmented(out.lm, seg.Z = ~x, psi = list(x = c(35,60)),
+                   control = seg.control(display = FALSE),
+                   npsi = 1) 
+    brokenline_PCA2 = data.frame(x = xx, y2 = broken.line(o)$fit)
+    #---------------------------------
+    sc=sc2
+    est=est2
+    # set contour probabilities for drawing contour levels
+    cl <- contourLevels(est, prob=c(0.5, 0.05, 0.001), approx=TRUE)
+    
+    de_fit.m <- data.frame(matrix(data=NA,nrow=17,ncol=4))
+    de_fit.m[,1] <- pca_FMr$var$coord[,1]
+    de_fit.m[,2] <- pca_FMr$var$coord[,2]
+    
+    
+    rownames(de_fit.m) <- rownames(pca_FMr$var$coord)
+    colnames(de_fit.m) <- c("PC1","PC2","r2","Pr(>1)")
+    # arrows
+    act.place.x <- vector(mode="numeric",length=nrow(de_fit.m))
+    act.place.y <- vector(mode="numeric",length=nrow(de_fit.m))
+    de_fit.m <- cbind(de_fit.m,act.place.x,act.place.y)
+    
+    
+    ylab_now=paste0(expression("PCA axis 2"))
+    xlab_now="Absolute latitude"
+    plot(est, cont=seq(1,100,by=2), display="filled.contour2", add=FALSE, cex.axis=2,cex.lab=2.5,
+         ylab=ylab_now,xaxt="n",
+         xlab="",
+         xlim=c(0,85),
+         ylim=c(-8,6)
+    )
+    ## add the tick
+    axis(1, at = seq(from=0,to=85,by = 20), label = rep("",5) , tck = -0.02,cex.lab=3)
+    ## add the labels
+    axis(1, at = seq(from=0,to=85,by = 20), lwd = 0, cex.axis = 0.9,cex.axis=2,line=1)
+    ## add the xlab
+    axis(side = 1,at=45,
+         labels = xlab_now,tick = FALSE,
+         cex.axis=3,line = 3.5)
+    
+    
+    plot(est,abs.cont=cl[1], labels=c(0.5),labcex=1, add=TRUE, lwd=2,lty=2, col= "dimgray")
+    plot(est,abs.cont=cl[2], labels=c(0.8),labcex=1, add=TRUE, lwd=1.5,lty=3, col= "dimgray")
+    plot(est,abs.cont=cl[3], labels=c(0.95),labcex=1, add=TRUE, lwd=.5,lty = 3, col= "dimgray")
+    points(PCA_lat$Group.1,PCA_lat$coord.Dim.2,pch=16,cex=2,col="white")
+    points(PCA_lat$Group.1,PCA_lat$coord.Dim.2,pch=16,cex=1.5)
+    #abline(lm2,col="black",lwd=3)
+    abline(lm2_agg,col="black",lwd=3)
+    #lines(brokenline_PCA2,col="black",lwd=2)
+    
+    
+    smr_lm2 <- summary(lm2)
+    r2=expression('r'^2* "=")
+    text(x = 70,y = 5,labels = r2,cex=2,col = "gray")
+    text(x = 77,y = 5,labels = round(smr_lm2$adj.r.squared,digits = 2),cex=2,col = "gray")
+    smr_lm2_agg <- summary(lm2_agg)
+      text(x = 70,y = 4,labels = r2,cex=2)
+       text(x = 77,y = 4,labels = round(smr_lm2_agg$adj.r.squared,digits = 2),cex=2)
+    
+    
+    dev.off()
+  }
+  }

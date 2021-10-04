@@ -68,8 +68,17 @@ plot_Figure_3b <- function(origin,nruns,doPCA){
   out$target_order <-  Rename_Vars(target_order1)[,3]
   out$target_order1 <-  target_order1
   
+  
+  pdf(file=file.path(origin,"figures","figure_3",paste0("rect",".pdf")),width = .25)
+  par(mfrow=c(1,1),mar=c(0,0,0,0))
+  st=21
+  plot(0:1,0:1,col="white",xlab = "",xaxt="n",ylab = "",yaxt="n",bty="n",xlim=c(0,1),ylim=c(0,1))
+  rect(xleft = 0,xright = 1,ybottom = 13/st,ytop = 20.75/st,col=size_col,border = NA)
+  rect(xleft = 0,xright = 1,ybottom = 5.5/st,ytop = 13/st,col=eco_col,border = NA)
+  rect(xleft = 0,xright = 1,ybottom = 2.5/st,ytop = 5.5/st,col=other_col,border = NA)
+  rect(xleft = 0,xright = 1,ybottom = -.5/st,ytop = 2.5/st,col="white",border = NA)
+  dev.off()
+
   return(out)
   
-
-  
-  }
+}

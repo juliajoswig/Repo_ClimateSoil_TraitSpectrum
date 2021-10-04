@@ -15,7 +15,6 @@
 # ---------------------------------------------------------------------------------------
 # 00 - define the origin path
 # ---------------------------------------------------------------------------------------
-# origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/20210907_Script_data/Main" 
 # origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/Repo_ClimateSoil_TraitSpectrum/Main" 
 #  origin =  # please input your directory here
   list.files(origin)
