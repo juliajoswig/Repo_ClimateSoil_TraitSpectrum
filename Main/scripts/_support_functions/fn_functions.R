@@ -36,5 +36,5 @@
 # ------------------------------------------------------------
 # table functions
 # ------------------------------------------------------------
-  source(file.path(origin,"scripts","03_table_functions","tab_1","Table_1.R"))
+  source(file.path(origin,"scripts","03_table_functions","Table_1.R"))
   

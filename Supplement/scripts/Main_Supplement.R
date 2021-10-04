@@ -21,9 +21,9 @@ orig_loctem =  "BGI"#"/Volumes/BGI"
 output_term = "" 
 list.files(file.path(orig_loctem,"work_1/2018_Dichotomy/FINAL/Submission/00_Prepare_for_submission"))
 origin = file.path(orig_loctem,"work_1/2018_Dichotomy/FINAL/NEE/Supplement")
+#OLD #origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/20210907_Script_data/Supplement"
 # origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/Repo_ClimateSoil_TraitSpectrum/Supplement" 
 
-#origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/20210907_Script_data/Supplement"
 list.files(file.path(origin,"scripts/_master"))
 
 # origin = # please add your local path here & comment the ones below.

@@ -47,23 +47,119 @@ plot_Figure_1a <- function(origin){
   pdf(file=file.path(origin,"figures","figure_1","figure_1a.pdf"),height=8,width=9)
 
   heatmap.2(dat_cor_p,
-            cexRow = 2,
-            cexCol = 2,
+            notecex=1.0,
+            cexRow =1.9,# 0.2 + 1/log10(nrow(dat_cor_p)),#2,
+            cexCol =1.9,# 0.2 + 1/log10(nrow(dat_cor_p)),#2,
             cellnote = dat_cor_p,  # same data set for cell labels
             notecol="black",      # change font color of cell labels to black
             #ColSideColors = color_to_traits(colnames(dat_cor_p)),
             RowSideColors = color_to_traits(nms),
+            srtRow = NULL,
             #            Colv = c(3:7,1,4:17),#c(9,16,8,7,14,1,15,2,4,11,6,10,3,5,17,12,13),
             density.info="none",  # turns off density plot inside color legend
             trace="none",         # turns off trace lines inside the heat map
             margins =c(12,11.5),     # widens margins around plot
             col=my_palette,       # use on color palette defined earlier
             breaks=col_breaks,    # enable color transition at specified limits
-            dendrogram="row"     # only draw a row dendrogram
+            dendrogram="row",     # only draw a row dendrogram
+            # color key + density info
+            key = TRUE,
+            keysize = 1.5
+            
   )            
   dev.off()
 
   
+  
+  pdf(file=file.path(origin,"figures","figure_1","figure_1a.pdf"),height=8,width=9)
+  
+  heatmap.2 (dat_cor_p,
+             
+             # dendrogram control
+             Rowv = TRUE,
+             Colv="Rowv", #else TRUE,
+             distfun = dist,
+             hclustfun = hclust,
+             dendrogram = c("row"),
+             reorderfun = function(d, w) reorder(d, w),
+             symm = FALSE,
+             
+             # data scaling
+             scale = c("none","row", "column"),
+             na.rm=TRUE,
+             
+             # image plot
+             revC = identical(Colv, "Rowv"),
+             add.expr,
+             
+             # mapping data to colors
+             breaks=col_breaks,
+             symbreaks=any(x < 0, na.rm=TRUE) || scale!="none",
+             
+             # colors
+             col=my_palette,
+             
+             # block sepration
+             colsep,
+             rowsep,
+             sepcolor="white",
+             sepwidth=c(0.05,0.05),
+             
+             # cell labeling
+             cellnote=dat_cor_p,
+             notecex=1.0,
+             notecol="black",#"cyan",
+             na.color=par("bg"),
+             
+             # level trace
+             trace=c("none"),
+             tracecol="cyan",
+             hline=median(breaks),
+             vline=median(breaks),
+             linecol=tracecol,
+             
+             # Row/Column Labeling
+             margins = c(12,11.5),
+             #ColSideColors,
+             RowSideColors=color_to_traits(nms),
+             cexRow = 0.2 + 1/log10(nrow(dat_cor_p)),
+             cexCol = 0.2 + 1/log10(nrow(dat_cor_p)),
+             labRow = NULL,
+             labCol = NULL,
+             srtRow = NULL,
+             srtCol = NULL,
+             adjRow = c(0,NA),
+             adjCol = c(NA,0),
+             offsetRow = 0.5,
+             offsetCol = 0.5,
+             colRow = NULL,
+             colCol = NULL,
+             
+             # color key + density info
+             key = TRUE,
+             keysize = 1.5,
+             density.info=c("none"),
+             denscol=tracecol,
+             symkey = any(x < 0, na.rm=TRUE) || symbreaks,
+             densadj = 0.25,
+             key.title = NULL,
+             key.xlab = NULL,
+             key.ylab = NULL,
+             key.xtickfun = NULL,
+             key.ytickfun = NULL,
+             key.par=list(),
+             
+             # plot labels
+             main = NULL,
+             xlab = NULL,
+             ylab = NULL,
+             
+             # plot layout
+             lmat = NULL,
+             lhei = NULL,
+             lwid = NULL
+             
+  )
 }
 
 
