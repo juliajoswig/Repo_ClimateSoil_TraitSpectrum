@@ -70,7 +70,7 @@ plot_Figure_1a <- function(origin){
   dev.off()
 
   
-  png(file=file.path(origin,"figures","figure_1","figure_1a.png"),res = 400,width = 900,height = 800)
+  png(file=file.path(origin,"figures","figure_1","figure_1a.png"),res = 400,width = 1800*2,height = 1600*2)
   
   heatmap.2(dat_cor_p,
             notecex=1.0,
