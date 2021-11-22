@@ -1,5 +1,16 @@
-#plot_Figure_S_TraitsEnv_lm <- function(origin,climOsoil,output_term){
-  
+
+# ---------------------------------------------------------------------------------------
+# 01. define the origin path
+# ---------------------------------------------------------------------------------------
+# origin = # please add your local path here & comment the ones below.
+# origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/20210907_Script_data/Supplement" # please add your local path here 
+list.files(file.path(origin,"scripts/_master"))
+
+# load functions
+source(file.path(origin,"scripts" ,"_master","fn_functions.R"))
+# packages
+source(file.path(origin,"scripts" ,"_master","fn_packages.R"))
+
   doPCA=FALSE
   nruns=50
   type_analysis="lm"
@@ -21,12 +32,11 @@
   soil=TRY_Env$soil
   climate=TRY_Env$climate
   
-## Julia add keep on here :)
+
   dat = cbind(soil,climate,trait)
   cor_tot <- cor(dat,use = "pairwise.complete.obs")
   cor_c <- cut_to_trait_corrs
-## Julia add stopped here
-  
+
   library("gplots")
   colz <- Rename_Vars(colnames(out$r2_vars))[,3]
   colz[colz=="soil"]=soil_col
@@ -39,7 +49,11 @@
   col_breaks = c(seq(0,50,length=100), 
                  seq(51,100,length=100))             
   
-    pdf(file=file.path(origin,"figures","Supplement_Fig_13",paste0("Figure_S_TraitsEnv_lm",output_term,".pdf")),
+  
+  if(!file.exists(file.path(origin,"figures","Supplement_Fig_16"))){
+    dir.create(file.path(origin,"figures","Supplement_Fig_16"))}
+  
+    pdf(file=file.path(origin,"figures","Supplement_Fig_16",paste0("Figure_S_TraitsEnv_lm",output_term,".pdf")),
           width=15,height=35)
       heatmap.2(t(out$r2_vars)*100,
                 cellnote = nbrs,  # same data set for cell labels

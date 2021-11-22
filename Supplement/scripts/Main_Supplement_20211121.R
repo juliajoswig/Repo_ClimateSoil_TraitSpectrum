@@ -157,19 +157,35 @@ for(output_term in output_terms){# loop through all analyses
 # Supplement Fig. 7: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_7","pl_Figure_S_WoNb.R")
 # Supplement Fig. 8a: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_8","Sup_Fig_8a.R")
 # Supplement Fig. 8b: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_8","Sup_Fig_8b.R")
-
 # Supplement Fig. 9: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_9","Sup_Fig_9.R")
+# Supplement Fig. 10a: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_10","Fig_TTT_1of2.R")
+# Supplement Fig. 10b: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_10","Fig_TTT_2of2.R")
+# Supplement Fig. 11: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_11","fig_latClimSoil.R")
+# Supplement Fig. 12: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_12","fig_WoN.R")
+# Supplement Fig. 13: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_13","pl_Figure_S_TraitsEnv_lm.R")
+# Supplement Fig. 14: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_14","pl_figure_S_PCA_HP.R")
+# Supplement Fig. 15: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_15","pl_Figure_S_Obs.R")
+# Supplement Fig. 16: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_16","pl_Figure_S_TraitsEnv_lmOBSERVED.R")
+# Supplement Fig. 17: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_17","fig_ModelComp.R")
 
-# Supplement Fig. 10: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
-# Supplement Fig. 11: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
-# Supplement Fig. 12: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
-# Supplement Fig. 13: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
-# Supplement Fig. 14: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
-# Supplement Fig. 15: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
-# Supplement Fig. 16: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
-# Supplement Fig. 17: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
-# Supplement Fig. 18: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
-# Supplement Fig. 19: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
+# For Supplement Figures 18 to 39
+# Template Barplot: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_18","fig_multipanel_Barplot,"pl_figure_Barplot_TEMPLATE.R")
+# Template Riverplot: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_18","fig_multipanel_Riverplot", "pl_figure_Riverplot_TEMPLATE.R")
+# Template Correlation: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_18","fig_multiplot_TraitTraitCorrel", "pl_figure_Correls_TEMPLATE.R")
+# Barplots: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_18","fig_multipanel_Barplot,"pl_figure_Barplot.R")
+# Latitudinal Gradients: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_18","fig_multipanel_Latitudinal_gradient","fn_figure_LatGradient.R")
+# Riverplot: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_18","fig_multipanel_Riverplot", "pl_figure_Riverplot.R")
+# Correlation: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_18","fig_multiplot_TraitTraitCorrel", "pl_figure_Correls.R")
+# Trait-Environment relationships: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_18","fig_trait_Environment", "single_trait_envir")
+# "fig_traitEnv"
+# Function putting the figures together:
+# file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_18", "Latex_Fig18to39_1of2.tex")
+# file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_18", "Latex_Fig18to39_2of2.tex")
+
+
+
+
+# Supplement Fig. 19: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_ 3","fig_")
 # Supplement Fig. 20: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
 # Supplement Fig. 12: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
 # Supplement Fig. 12: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")

@@ -1,12 +1,27 @@
 
-plot_figure_S4_barplot <- function(origin){
-  
+# ---------------------------------------------------------------------------------------
+# 01. define the origin path
+# ---------------------------------------------------------------------------------------
+# origin = # please add your local path here & comment the ones below.
+# origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/20210907_Script_data/Supplement" # please add your local path here 
+list.files(file.path(origin,"scripts/_master"))
+
+# load functions
+source(file.path(origin,"scripts" ,"_master","fn_functions.R"))
+# packages
+source(file.path(origin,"scripts" ,"_master","fn_packages.R"))
+
 
   trait_now=1
 
     trait_name_now = "Trait name"
     
-    pdf(file = file.path(origin,"figures","figure_S3",paste0("Template_Barplot.pdf")),pointsize = 11,height=4,width=10)
+    if(!file.exists(file.path(origin,"figures","Supplement_Fig_18"))){
+      dir.create(file.path(origin,"figures","Supplement_Fig_18"))}
+    if(!file.exists(file.path(origin,"figures","Supplement_Fig_18","Barplot"))){
+      dir.create(file.path(origin,"figures","Supplement_Fig_18","Barplot"))}
+    
+    pdf(file = file.path(origin,"figures","Supplement_Fig_18","Barplot",paste0("Template_Barplot.pdf")),pointsize = 11,height=4,width=10)
     par(mfrow=c(1,3),mar=c(2.5,5,1.5,1))
     
     s=as.matrix(c(.2,.2,.25))
@@ -45,4 +60,3 @@ plot_figure_S4_barplot <- function(origin){
            text.col = "black",  pch = c(15, 15, 15),bg = "white")
     
      dev.off()
-}

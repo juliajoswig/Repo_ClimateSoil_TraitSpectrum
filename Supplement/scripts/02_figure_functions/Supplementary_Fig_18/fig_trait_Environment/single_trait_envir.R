@@ -1,5 +1,22 @@
-plot_Figure_S_TraitsEnv_lm <- function(origin,climOsoil,nruns,output_term,doPCA){
-  
+
+# ---------------------------------------------------------------------------------------
+# 01. define the origin path
+# ---------------------------------------------------------------------------------------
+# origin = # please add your local path here & comment the ones below.
+# origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/20210907_Script_data/Supplement" # please add your local path here 
+list.files(file.path(origin,"scripts/_master"))
+
+# load functions
+source(file.path(origin,"scripts" ,"_master","fn_functions.R"))
+# packages
+source(file.path(origin,"scripts" ,"_master","fn_packages.R"))
+
+
+if(!file.exists(file.path(origin,"figures","Supplement_Fig_18"))){
+  dir.create(file.path(origin,"figures","Supplement_Fig_18"))}
+if(!file.exists(file.path(origin,"figures","Supplement_Fig_18","Trait_Environment"))){
+  dir.create(file.path(origin,"figures","Supplement_Fig_18","Trait_Environment"))}
+
   type_analysis="lm"
   climOsoil="soilAclimate"
   doPCA=FALSE
@@ -15,7 +32,8 @@ plot_Figure_S_TraitsEnv_lm <- function(origin,climOsoil,nruns,output_term,doPCA)
   
   library("gplots")
   colnames(out$r2_vars) <- Rename_Vars(colnames(out$r2_vars))[,3]
-  load(file = file.path(origin,"data","master_matrix",paste0("X2",output_term,".RData")))
+  list.files(file.path(origin,"data","master_matrix"))
+  load(file = file.path(origin,"data","master_matrix",paste0("X2_",output_term,".RData")))
   trait=TRY_Env$trait
   load(file = file.path(origin, "data", "_results",type_analysis,climOsoil, paste0(nruns,"Reps"),paste0("Res_",output_term,pca_term,".RData")))
   
@@ -25,14 +43,6 @@ plot_Figure_S_TraitsEnv_lm <- function(origin,climOsoil,nruns,output_term,doPCA)
 #    trait=TRY_Env$trait
 #    }  
 
-  if(!file.exists(file.path(origin,"figures","Supplement_Fig_18_33"))){
-    dir.create(file.path(origin,"figures","Supplement_Fig_18_33"))
-  }
-  if(!file.exists(file.path(origin,"figures","Supplement_Fig_18_33","Trait_Environment"))){
-    dir.create(file.path(origin,"figures","Supplement_Fig_18_33","Trait_Environment"))
-  }
-  
-  
   colnames(out$r2_vars) <- Rename_Vars(colnames(out$r2_vars))[,3]
   target_order=c("LeArea","PlantHeight" ,"SeedMass","SeLen","LeFMass","ConduitDens",
                  "DispULen","SSD","SLA" ,"LeC","LeN","LeP", "LeNArea","LeNP","Led15N","SenbU","VesLen")
@@ -40,7 +50,7 @@ plot_Figure_S_TraitsEnv_lm <- function(origin,climOsoil,nruns,output_term,doPCA)
   colnames(TRY_Env$trait)
   
   t=1
-  pdf(file=file.path(origin,"figures","Supplement_Fig_18_33","Trait_Environment",paste0("Trait_environment",output_term,"_lm.pdf")),width=7,
+  pdf(file=file.path(origin,"figures","Supplement_Fig_18","Trait_Environment",paste0("Trait_environment",output_term,"_lm.pdf")),width=7,
       height=25)
   par(mar=c(5,10,2,1))
   t=3
@@ -73,4 +83,4 @@ plot_Figure_S_TraitsEnv_lm <- function(origin,climOsoil,nruns,output_term,doPCA)
   }
   dev.off()
 
-  }
+  

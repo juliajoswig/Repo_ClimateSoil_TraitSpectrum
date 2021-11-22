@@ -1,5 +1,22 @@
-fn_SingeTrait_LatGradient <- function(){}
-  
+
+# ---------------------------------------------------------------------------------------
+# 01. define the origin path
+# ---------------------------------------------------------------------------------------
+# origin = # please add your local path here & comment the ones below.
+# origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/20210907_Script_data/Supplement" # please add your local path here 
+list.files(file.path(origin,"scripts/_master"))
+
+# load functions
+source(file.path(origin,"scripts" ,"_master","fn_functions.R"))
+# packages
+source(file.path(origin,"scripts" ,"_master","fn_packages.R"))
+
+
+if(!file.exists(file.path(origin,"figures","Supplement_Fig_18"))){
+  dir.create(file.path(origin,"figures","Supplement_Fig_18"))}
+if(!file.exists(file.path(origin,"figures","Supplement_Fig_18","LatGradient"))){
+  dir.create(file.path(origin,"figures","Supplement_Fig_18","LatGradient"))}
+
 
   load(file = file.path(origin,"data","master_matrix","X1.RData"))
   load(file.path(origin,"data","helper_files","Ecoregions_selected","Ecoregion_Agg2.RData"))

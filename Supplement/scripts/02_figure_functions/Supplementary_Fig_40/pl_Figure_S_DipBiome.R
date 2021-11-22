@@ -1,6 +1,20 @@
-pl_Figure_S_DipBiome <- function(origin){
-  
-  
+
+# ---------------------------------------------------------------------------------------
+# 01. define the origin path
+# ---------------------------------------------------------------------------------------
+# origin = # please add your local path here & comment the ones below.
+# origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/20210907_Script_data/Supplement" # please add your local path here 
+list.files(file.path(origin,"scripts/_master"))
+
+# load functions
+source(file.path(origin,"scripts" ,"_master","fn_functions.R"))
+# packages
+source(file.path(origin,"scripts" ,"_master","fn_packages.R"))
+
+
+if(!file.exists(file.path(origin,"figures","Supplement_Fig_40"))){
+  dir.create(file.path(origin,"figures","Supplement_Fig_40"))}
+
 
   library(vegan)
   library(ks) 
@@ -56,5 +70,5 @@ pl_Figure_S_DipBiome <- function(origin){
       text(x = -7,y = .75,labels = paste0("n = ",sum(!is.na(TRY_pca[ix,2]))),col="gray",cex=1.5)
     }
   dev.off()
+
   
-}

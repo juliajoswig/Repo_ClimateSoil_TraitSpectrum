@@ -1,5 +1,15 @@
-Figure_S3 <- function(origin,Appr_type_now){
-  
+
+# ---------------------------------------------------------------------------------------
+# 01. define the origin path
+# ---------------------------------------------------------------------------------------
+# origin = # please add your local path here & comment the ones below.
+# origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/20210907_Script_data/Supplement" # please add your local path here 
+list.files(file.path(origin,"scripts/_master"))
+
+# load functions
+source(file.path(origin,"scripts" ,"_master","fn_functions.R"))
+# packages
+source(file.path(origin,"scripts" ,"_master","fn_packages.R"))  
   
   source(file.path(origin,"scripts","01_analysis_functions","HierarchicalPartitioning","fn_hp_N2_wrapper.R"))
   # define data set to be loaded
@@ -22,6 +32,9 @@ Figure_S3 <- function(origin,Appr_type_now){
   hp_RF <-hierarchical_partitioning(origin,output_term,climOsoil,out_now=out_RF)
   hp_PLS <- hierarchical_partitioning(origin,output_term,climOsoil,out_now=out_PLS)
   hp_PLS_nopca <- hierarchical_partitioning(origin,output_term,climOsoil,out_now=out_PLS_nopca)
+  
+  if(!file.exists(file.path(origin,"figures","Supplement_Fig_17"))){
+    dir.create(file.path(origin,"figures","Supplement_Fig_17"))}
   
   
   pdf(file=file.path(origin,"figures","Supplement_Fig_17","Figure_S_ModelComp.pdf"),width=12,height=10)

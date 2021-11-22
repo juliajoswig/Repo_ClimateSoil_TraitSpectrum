@@ -1,17 +1,25 @@
-#install.packages("likert")
-# whichfig S1 S2
 
-nruns=50
+# ---------------------------------------------------------------------------------------
+# 01. define the origin path
+# ---------------------------------------------------------------------------------------
+# origin = # please add your local path here & comment the ones below.
+# origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/20210907_Script_data/Supplement" # please add your local path here 
+list.files(file.path(origin,"scripts/_master"))
+
+# load functions
+source(file.path(origin,"scripts" ,"_master","fn_functions.R"))
+# packages
+source(file.path(origin,"scripts" ,"_master","fn_packages.R"))
+#install.packages("likert")
+
+# Plase select
 output_term="climLat"
 #output_term="soilLat"
+
+nruns=50
 doPCA=TRUE
 climOsoil="soilAclimate"
 
-if(!file.exists(file.path(origin,"figures","Supplement_Fig_11"))){
-  dir.create(file.path(origin,"figures","Supplement_Fig_11"))}
-
-#plot_Figure_Bias <- function(origin,nruns,doPCA,climOsoil,output_term){
-  
   require(likert)
   #-------------
   # load data
@@ -61,12 +69,8 @@ if(!file.exists(file.path(origin,"figures","Supplement_Fig_11"))){
       
       dfs <- likert(summary = df)
       str(dfs)
-    #The items are not present, but the likert object can still be summarised:
       summary(dfs)
-  #Plots
-  
-  
-  
+
   scale_height = knitr::opts_chunk$get('fig.height')*2.5
   scale_width = knitr::opts_chunk$get('fig.width')*.7
   knitr::opts_chunk$set(fig.height = scale_height, fig.width = scale_width)
@@ -77,7 +81,12 @@ if(!file.exists(file.path(origin,"figures","Supplement_Fig_11"))){
   out <- list()
   out$dfs <- dfs
   out$target.order <-  Rename_Vars(target_order1)[,3]
+
+    # create figure folder
+  if(!file.exists(file.path(origin,"figures","Supplement_Fig_11"))){
+    dir.create(file.path(origin,"figures","Supplement_Fig_11"))}
   
+  #plot.
   if(output_term=="climLat"){pdf(file=file.path(origin,"figures","Supplement_Fig_11",paste0("Supplement_Fig_11a.pdf")))  }
   if(output_term=="soilLat"){pdf(file=file.path(origin,"figures","Supplement_Fig_11",paste0("Supplement_Fig_11b.pdf")))  }
 
