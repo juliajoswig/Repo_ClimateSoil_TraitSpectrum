@@ -27,8 +27,8 @@ target_order1=c("SeLen","DispULen","SeedMass","PlantHeight","LeFMass","LeArea","
 load(file.path(origin,"data","master_matrix","X1.RData"))
 
 # select data for PCA: traits that are imputed.
-  X1_trait <- TRY_Env1[,Rename_Vars(gsub(colnames(TRY_Env1),pattern = "_gf",replacement = ""))[,2]=="trait"]
-  colnames(X1_trait) <- gsub(colnames(X1_trait),pattern = "_gf",replacement = "")
+  X1_trait <- TRY_Env1[,Rename_Vars(gsub(colnames(TRY_Env1),pattern = "_pred",replacement = ""))[,2]=="trait"]
+  colnames(X1_trait) <- gsub(colnames(X1_trait),pattern = "_pred",replacement = "")
   dim(X1_trait)
 # do PCA
   PCA_X1 <- PCA(log(X1_trait),ncp = ncol(X1_trait))

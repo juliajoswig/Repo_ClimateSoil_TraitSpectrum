@@ -1,7 +1,21 @@
 
-origin
+
+# ---------------------------------------------------------------------------------------
+# 01. define the origin path
+# ---------------------------------------------------------------------------------------
+# origin = # please add your local path here & comment the ones below.
+# origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/20210907_Script_data/Supplement" # please add your local path here 
+list.files(file.path(origin,"scripts/_master"))
+
+# load functions
+source(file.path(origin,"scripts" ,"_master","fn_functions.R"))
+# packages
+source(file.path(origin,"scripts" ,"_master","fn_packages.R"))
+
+# Please select
 output_term="woody"
 #output_term="non_woody"
+
 if (!require("gplots")) {
     install.packages("gplots", dependencies = TRUE)
   }
@@ -42,10 +56,12 @@ if (!require("gplots")) {
   nms <- colnames(dat_cor_p)
   colnames(dat_cor_p) <- Rename_Vars(colnames(dat_cor_p))[,3]
   rownames(dat_cor_p) <- Rename_Vars(rownames(dat_cor_p))[,3]
-  
+
+# create a folder for figure
   if(!dir.exists(file.path(origin,"figures","Supplement_fig_8"))){
     dir.create(file.path(origin,"figures","Supplement_fig_8"))}
   
+# plot.  
   pdf(file=file.path(origin,"figures","Supplement_fig_8",paste0("Supplement_fig_8",output_term,".pdf")),height=8,width=9)
   
   heatmap.2(dat_cor_p,

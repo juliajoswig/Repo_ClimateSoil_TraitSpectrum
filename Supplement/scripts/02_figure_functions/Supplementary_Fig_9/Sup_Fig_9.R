@@ -1,5 +1,16 @@
-plot_Figure_2 <- function(origin){
-  
+
+# ---------------------------------------------------------------------------------------
+# 01. define the origin path
+# ---------------------------------------------------------------------------------------
+# origin = # please add your local path here & comment the ones below.
+# origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/20210907_Script_data/Supplement" # please add your local path here 
+list.files(file.path(origin,"scripts/_master"))
+
+# load functions
+source(file.path(origin,"scripts" ,"_master","fn_functions.R"))
+# packages
+source(file.path(origin,"scripts" ,"_master","fn_packages.R"))
+
   require("dplyr")
   library(vegan)
   library(ks) 
@@ -73,7 +84,7 @@ plot_Figure_2 <- function(origin){
     print("kernel estimation done!")
   }
   
-  
+# create figure folder  
   if(!dir.exists(file.path(origin,"figures","Supplement_Fig_9"))){
     dir.create(file.path(origin,"figures","Supplement_Fig_9"))}
   #----------------------------------------------------------------------------
@@ -206,5 +217,4 @@ plot_Figure_2 <- function(origin){
     text(x = 67,y = 4,labels = round(smr_lm1_agg$adj.r.squared,digits = 2),cex=2)
     
     dev.off()
-  }
   }

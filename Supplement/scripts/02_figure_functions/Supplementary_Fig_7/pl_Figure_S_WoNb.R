@@ -1,22 +1,50 @@
 
-plot_Figure_S_WoNb <- function(origin,output_term){
-  
-  if (!require("gplots")) {
-    install.packages("gplots", dependencies = TRUE)
-    library(gplots)
-  }
-  if (!require("RColorBrewer")) {
-    install.packages("RColorBrewer", dependencies = TRUE)
-    library(RColorBrewer)
-  }
 
-  # read data
-  dat_cor <- read.csv(file=file.path(origin_new,"data","helper_files","fig_S1",output_term,"trait_correlations.csv"))
-  rownames(dat_cor) <- dat_cor[,1]
-  dat_cor <- dat_cor[,-which(colnames(dat_cor)=="X")]
-  colnames(dat_cor) <- rownames(dat_cor)
+# ---------------------------------------------------------------------------------------
+# 01. define the origin path
+# ---------------------------------------------------------------------------------------
+# origin = # please add your local path here & comment the ones below.
+# origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/20210907_Script_data/Supplement" # please add your local path here 
+list.files(file.path(origin,"scripts/_master"))
+
+# load functions
+source(file.path(origin,"scripts" ,"_master","fn_functions.R"))
+# packages
+source(file.path(origin,"scripts" ,"_master","fn_packages.R"))
+if (!require("gplots")) {
+  install.packages("gplots", dependencies = TRUE)
+  library(gplots)
+}
+if (!require("RColorBrewer")) {
+  install.packages("RColorBrewer", dependencies = TRUE)
+  library(RColorBrewer)
+}
+
+
+target_order1=c("SeLen","DispULen","SeedMass","PlantHeight","LeFMass","LeArea","ConduitDens",
+                "SSD","LeC","LeNP","LeP","LeNArea","SLA","LeN", "VesLen","Led15N","SenbU")
+
+# please select:
+output_term="woody"
+#output_term="non_woody"
+
+
+  # read data, produced earlier.
+# load data of species per ecoregion aggregation level
+if(output_term=="woody"){TRY_Env1 <- read.csv(file.path(origin,"data","master_matrix","X1_woody.csv"))}
+if(output_term=="non_woody"){TRY_Env1 <- read.csv(file.path(origin,"data","master_matrix","X1_non_woody.csv"))}
+
+# select data for trait-trait relationships: traits that are imputed.
+  X1_trait <- TRY_Env1[,Rename_Vars(gsub(colnames(TRY_Env1),pattern = "_pred",replacement = ""))[,2]=="trait"]
+  colnames(X1_trait) <- gsub(colnames(X1_trait),pattern = "_pred",replacement = "")
+  dim(X1_trait)
+  dat_cor <- cor(X1_trait)
+# dat_cor <- read.csv(file=file.path(origin_new,"data","helper_files","fig_S1",output_term,"trait_correlations.csv"))
+#  rownames(dat_cor) <- dat_cor[,1]
+#  dat_cor <- dat_cor[,-which(colnames(dat_cor)=="X")]
+#  colnames(dat_cor) <- rownames(dat_cor)
   dat_cor_m <- as.matrix(dat_cor)
-  for(i in 1:ncol(dat_cor)){dat_cor_m[,i] <- as.numeric(dat_cor_m[,i])}
+#  for(i in 1:ncol(dat_cor)){dat_cor_m[,i] <- as.numeric(dat_cor_m[,i])}
   
   # creates an own color palette from red to green
   my_palette <- colorRampPalette(c("white","#edf8fb","#b3cde3","#8c96c6","#88419d"))(n = 499)# Plum
@@ -32,8 +60,13 @@ plot_Figure_S_WoNb <- function(origin,output_term){
 
   dat_cor_p <- round(abs(dat_cor_m),digits=2)
   dat_cor_p[dat_cor_p==1] <- NA
-
-  pdf(file=file.path(origin,"figures","figure_S_WoN",paste0("figure_b",output_term,".pdf")),height=8,width=9)
+  
+# create figure folder
+  if(!dir.exists(file.path(origin,"figures","Supplement_Fig_7"))){
+    dir.create(file.path(origin,"figures","Supplement_Fig_7"))}
+  
+# plot.  
+  pdf(file=file.path(origin,"figures","Supplement_Fig_7",paste0("figure_b",output_term,".pdf")),height=8,width=9)
 
   heatmap.2(dat_cor_p,
             cellnote = dat_cor_p,  # same data set for cell labels
@@ -49,7 +82,6 @@ plot_Figure_S_WoNb <- function(origin,output_term){
   )            
   dev.off()
 
+
+
   
-}
-
-
