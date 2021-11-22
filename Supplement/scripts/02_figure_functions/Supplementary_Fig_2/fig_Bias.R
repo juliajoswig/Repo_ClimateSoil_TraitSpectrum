@@ -18,13 +18,11 @@ target_order1=c("SeLen","DispULen","SeedMass","PlantHeight","LeFMass","LeArea","
 # Load data
 # ---------------------------------------------------------------------------------------
 climOsoil="soilAclimate"
+# Please change the output term here:
 output_term="bias1"#OR
 #output_term="bias2"#OR
 #output_term="bias3"
-#output_terms=c("bias1","bias2","bias3")
-#for(o in 1:3){
-#  output_term=output_terms[o]
-  
+
   doPCA=TRUE
   nruns=50
   if(doPCA){pca_term="doPCA"}
@@ -93,4 +91,3 @@ output_term="bias1"#OR
         scale_fill_manual(values=c(climate_col, "lightgray", soil_col),
                           drop=FALSE))
   dev.off()
-#}

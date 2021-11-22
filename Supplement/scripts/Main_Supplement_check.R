@@ -23,7 +23,7 @@ list.files(file.path(orig_loctem,"work_1/2018_Dichotomy/FINAL/Submission/00_Prep
 origin = file.path(orig_loctem,"work_1/2018_Dichotomy/FINAL/NEE/Supplement")
 #OLD #origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/20210907_Script_data/Supplement"
 # origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/Repo_ClimateSoil_TraitSpectrum/Supplement" 
-origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/put_into_repository/Supplement" 
+# origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/put_into_repository/Supplement" 
 
 list.files(file.path(origin,"scripts/_master"))
 
@@ -58,57 +58,53 @@ head(TRY_Env$trait)
 dim(TRY_Env$trait)
 
 #------------------------------------------------------------------------------------
-# 3. model building analyses 
+# 3. Produce all model building analyses for all supplement figures
 # input folder: data/master_matrix
 # output folder: data/_results
 #------------------------------------------------------------------------------------
+run_again=FALSE # set = TRUE, if you want to run the models again.
+nruns_RR = 50 # number of model building repetitions for ridge regression final version = 50, for quick version nruns=2
+nruns_LM = 50 # number of model building repetitions for linear models, final version = 50, for quick version nruns=2
+nruns_RF = 2 # number of model building repetitions for random forest, 2 
+nruns_PLS = 10 # number of model building repetitions for linear models, final version = 10, for quick version nruns=2
+
+if(run_again=TRUE){
 for(output_term in output_terms){# loop through all analyses which takes a couple of hours
   print(output_term)  
-  
-  nruns_RR = 50 # number of model building repetitions for ridge regression final version = 50, for quick version nruns=2
-  nruns_LM = 50 # number of model building repetitions for linear models, final version = 50, for quick version nruns=2
-  nruns_RF = 2 # number of model building repetitions for random forest, 2 
-  nruns_PLS = 10 # number of model building repetitions for linear models, final version = 10, for quick version nruns=2
-  
-  doPCA = TRUE # define if PCA prior to RR/PLS is to be done analysis to be done (never RF)
-  doRR  = TRUE # define if ridge regression analysis to be done
-  doPLS = FALSE # define if PLS analysis to be done
-  doRF  = FALSE # define if random forest analysis to be done
-  doLM  = FALSE # define if linear model analysis to be done
 
+  # here: please adjust according to your needs
   doPCA = FALSE # define if PCA prior to RR/PLS is to be done analysis to be done (never RF)
   doRR  = FALSE # define if ridge regression analysis to be done
   doPLS = FALSE # define if PLS analysis to be done
   doRF  = FALSE # define if random forest analysis to be done
   doLM  = TRUE# define if linear model analysis to be done
   
+  
   model_analyses(origin, output_term, doPCA,
                  doRR,    doLM,    doRF,    doPLS,
                  nruns_RR,nruns_LM,nruns_RF,nruns_PLS)
 }
-
+}
 
 #------------------------------------------------------------------------------------
 # 2. hierarchical partitioning analyses
 # input folder:  data/_results/(model type)/(selected variables)/nruns/
 # output folder: data/_results/(model type)/_(model type)_results
 #------------------------------------------------------------------------------------
-output_term = "non_woody" # defines with which subset the analysis will be done  (total)
+# output_term = "" # defines with which subset the analysis will be done  (total)
 for(output_term in output_terms){# loop through all analyses
   print(output_term)  
-  
   
   doPLS = FALSE# define if hierarchical partioning f or PLS analysis to be done
   doPCA = TRUE # define if hierarchical partioning for PCA prior to RR or PLS is to be done analysis to be done
   doRR  = TRUE # define if hierarchical partioning for ridge regression analysis to be done, woody, non-woody and "" need to be done when run
   doRF  = FALSE# define if hierarchical partioning for random forest analysis to be done
   
-  if(output_term!=""){
+  if(output_term!=""){ # only Ridge Regression utilized.
   total_hierarchical_partitioning_analyses(origin,output_term,
                                            doPLS,doPCA,doRR,doRF,
                                            nruns_RR,nruns_LM,nruns_RF,nruns_PLS) 
   }
-
 
   if(output_term==""){
   for(mo_now in 1:4){
@@ -151,7 +147,32 @@ for(output_term in output_terms){# loop through all analyses
 #------------------------------------------------------------------------------------
 # Supplement Fig. 1: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_1","fig_Noise.R")
 # Supplement Fig. 2: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_2","fig_Bias.R")
-# Supplement Fig. 3: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_Bias.R")
+# with output_term="bias1" AND "bias2" AND "bias3"
+# Supplement Fig. 3: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","pl_Figure_S_noSelComp.R") 
+# Supplement Fig. 4: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_4","fig_")
+# this time: output_term="bias3"
+
+# Supplement Fig. 5: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
+# Supplement Fig. 6: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
+# Supplement Fig. 7: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
+# Supplement Fig. 8: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
+# Supplement Fig. 9: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
+# Supplement Fig. 10: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
+# Supplement Fig. 11: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
+# Supplement Fig. 12: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
+# Supplement Fig. 13: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
+# Supplement Fig. 14: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
+# Supplement Fig. 15: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
+# Supplement Fig. 16: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
+# Supplement Fig. 17: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
+# Supplement Fig. 18: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
+# Supplement Fig. 19: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
+# Supplement Fig. 20: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
+# Supplement Fig. 12: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
+# Supplement Fig. 12: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
+# Supplement Fig. 12: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
+# Supplement Fig. 12: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
+# Supplement Fig. 12: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
 
 if(!file.exists(file.path(origin,"figures","Supplement_Fig_3"))){
   dir.create(file.path(origin,"figures","Supplement_Fig_3"))}
