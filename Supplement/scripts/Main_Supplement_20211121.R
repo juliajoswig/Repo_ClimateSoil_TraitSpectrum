@@ -91,10 +91,10 @@ for(output_term in output_terms){# loop through all analyses which takes a coupl
 for(output_term in output_terms){# loop through all analyses
   print(output_term)  
   
-  doPLS = FALSE# define if hierarchical partioning f or PLS analysis to be done
-  doPCA = TRUE # define if hierarchical partioning for PCA prior to RR or PLS is to be done analysis to be done
-  doRR  = TRUE # define if hierarchical partioning for ridge regression analysis to be done, woody, non-woody and "" need to be done when run
-  doRF  = FALSE# define if hierarchical partioning for random forest analysis to be done
+  doPLS = FALSE# define if hierarchical partitioning f or PLS analysis to be done
+  doPCA = TRUE # define if hierarchical partitioning for PCA prior to RR or PLS is to be done analysis to be done
+  doRR  = TRUE # define if hierarchical partitioning for ridge regression analysis to be done, woody, non-woody and "" need to be done when run
+  doRF  = FALSE# define if hierarchical partitioning for random forest analysis to be done
   
   if(output_term!=""){ # only Ridge Regression utilized.
   total_hierarchical_partitioning_analyses(origin,output_term,
@@ -181,14 +181,6 @@ for(output_term in output_terms){# loop through all analyses
 # Supplement Fig. 42: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_42","pl_Figure_S_CoefVar.R")
 
 
-#------------------------------------------------------------------------------------
-# [4.] create the tables
-#------------------------------------------------------------------------------------
-# Manuscript
-t1 <- table_1(origin)
-# 
-tS_TraitInfo <- tab_S_TraitInfo(origin,TRY_Env$info)
-tab_S_ER(origin,trait,info)
 
 #------------------------------------------------------------------------------------
 # Additions:

@@ -1,0 +1,288 @@
+"","V1","V2"
+"1","X",NA
+"2","X.2",NA
+"3","X.1",NA
+"4","Group.1",NA
+"5","Group.2",NA
+"6","Lon",NA
+"7","Lat",NA
+"8","OBJECTID",NA
+"9","AREA",NA
+"10","PERIMETER",NA
+"11","ECO_NAME",NA
+"12","REALM",NA
+"13","BIOME",NA
+"14","ECO_NUM",NA
+"15","ECO_ID",NA
+"16","ECO_SYM",NA
+"17","GBL_STAT",NA
+"18","G200_REGIO",NA
+"19","G200_NUM",NA
+"20","G200_BIOME",NA
+"21","G200_STAT",NA
+"22","Shape_Leng",NA
+"23","Shape_Area",NA
+"24","area_km2",NA
+"25","eco_code",NA
+"26","PER_area",NA
+"27","PER_area_1",NA
+"28","PER_area_2",NA
+"29","NA.",NA
+"30","X.1_obs",NA
+"31","AccSpeciesID.x_obs",NA
+"32","AccSpeciesName_obs",NA
+"33","Lat_obs",NA
+"34","Lon_obs",NA
+"35","X_obs",NA
+"36","AccSpeciesID.y_obs",NA
+"37","Species_obs",NA
+"38","Genus_obs",NA
+"39","Family_obs",NA
+"40","PhylogeneticGroup_obs",NA
+"41","Exposition_obs",NA
+"42","Maturity_obs",NA
+"43","PlantGrowthForm_obs",NA
+"44","LeafType_obs",NA
+"45","LeafCompoundness_obs",NA
+"46","TypicalNumberOfLeaflets_obs",NA
+"47","DbComment_obs",NA
+"48","ObservationID.1_obs",NA
+"49","LeArea_obs",NA
+"50","SSD_obs",NA
+"51","SLA_obs",NA
+"52","LeC_obs",NA
+"53","LeN_obs",NA
+"54","LeP_obs",NA
+"55","PlantHeight_obs",NA
+"56","SeedMass_obs",NA
+"57","SeLen_obs",NA
+"58","LeNArea_obs",NA
+"59","LeNP_obs",NA
+"60","Led15N_obs",NA
+"61","SenbU_obs",NA
+"62","LeFMass_obs",NA
+"63","ConduitDens_obs",NA
+"64","DispULen_obs",NA
+"65","VesLen_obs",NA
+"66","X_pred",NA
+"67","AccSpeciesID.x_pred",NA
+"68","AccSpeciesName_pred",NA
+"69","Lat_pred",NA
+"70","Lon_pred",NA
+"71","AccSpeciesID.y_pred",NA
+"72","Species_pred",NA
+"73","Genus_pred",NA
+"74","Family_pred",NA
+"75","PhylogeneticGroup_pred",NA
+"76","Exposition_pred",NA
+"77","Maturity_pred",NA
+"78","PlantGrowthForm_pred",NA
+"79","LeafType_pred",NA
+"80","LeafCompoundness_pred",NA
+"81","TypicalNumberOfLeaflets_pred",NA
+"82","DbComment_pred",NA
+"83","ObservationID.1_pred",NA
+"84","LeArea_pred",NA
+"85","SSD_pred",NA
+"86","SLA_pred",NA
+"87","LeC_pred",NA
+"88","LeN_pred",NA
+"89","LeP_pred",NA
+"90","PlantHeight_pred",NA
+"91","SeedMass_pred",NA
+"92","SeLen_pred",NA
+"93","LeNArea_pred",NA
+"94","LeNP_pred",NA
+"95","Led15N_pred",NA
+"96","SenbU_pred",NA
+"97","LeFMass_pred",NA
+"98","ConduitDens_pred",NA
+"99","DispULen_pred",NA
+"100","VesLen_pred",NA
+"101","X_gf",NA
+"102","AccSpeciesID.x_gf",NA
+"103","AccSpeciesName_gf",NA
+"104","Lat_gf",NA
+"105","Lon_gf",NA
+"106","AccSpeciesID.y_gf",NA
+"107","Species_gf",NA
+"108","Genus_gf",NA
+"109","Family_gf",NA
+"110","PhylogeneticGroup_gf",NA
+"111","Exposition_gf",NA
+"112","Maturity_gf",NA
+"113","PlantGrowthForm_gf",NA
+"114","LeafType_gf",NA
+"115","LeafCompoundness_gf",NA
+"116","TypicalNumberOfLeaflets_gf",NA
+"117","DbComment_gf",NA
+"118","ObservationID.1_gf",NA
+"119","LeArea_gf",NA
+"120","SSD_gf",NA
+"121","SLA_gf",NA
+"122","LeC_gf",NA
+"123","LeN_gf",NA
+"124","LeP_gf",NA
+"125","PlantHeight_gf",NA
+"126","SeedMass_gf",NA
+"127","SeLen_gf",NA
+"128","LeNArea_gf",NA
+"129","LeNP_gf",NA
+"130","Led15N_gf",NA
+"131","SenbU_gf",NA
+"132","LeFMass_gf",NA
+"133","ConduitDens_gf",NA
+"134","DispULen_gf",NA
+"135","VesLen_gf",NA
+"136","AnnualMeanTemperature.nc","Temperature (WorldClim), details in Supplement Table of Climate data."
+"137","MaxTemperatureofWarmestMonth.nc","Temperature (WorldClim), details in Supplement Table of Climate data."
+"138","MinTemperatureofColdestMonth.nc","Temperature (WorldClim), details in Supplement Table of Climate data."
+"139","TemperatureSeasonality.nc","Temperature (WorldClim), details in Supplement Table of Climate data."
+"140","MeanDiurnalRange.nc",NA
+"141","AnnualPrecipitation.nc","Precipitation (WorldClim), details in Supplement Table of Climate data."
+"142","PrecipitationofWettestMonth.nc","Precipitation (WorldClim), details in Supplement Table of Climate data."
+"143","PrecipitationofDriestMonth.nc","Precipitation (WorldClim), details in Supplement Table of Climate data."
+"144","PrecipitationSeasonality.nc","Precipitation (WorldClim), details in Supplement Table of Climate data."
+"145","vapr.mean.nc","water vapor pressure (kPa) (WorldClim), details in Supplement Table of Climate data."
+"146","vapr.max.nc","water vapor pressure (kPa) (WorldClim), details in Supplement Table of Climate data."
+"147","vapr.min.nc","water vapor pressure (kPa) (WorldClim), details in Supplement Table of Climate data."
+"148","vapr.sd.nc","water vapor pressure (kPa) (WorldClim), details in Supplement Table of Climate data."
+"149","srad.mean.nc","Solar radiation (WorldClim), details in Supplement Table of Climate data."
+"150","srad.max.nc","Solar radiation (WorldClim), details in Supplement Table of Climate data."
+"151","srad.min.nc","Solar radiation (WorldClim), details in Supplement Table of Climate data."
+"152","srad.sd.nc","Solar radiation (WorldClim), details in Supplement Table of Climate data."
+"153","wind.mean.nc","Average wind speec (WorldClim), details in Supplement Table of Climate data."
+"154","wind.max.nc","Average wind speec (WorldClim), details in Supplement Table of Climate data."
+"155","wind.min.nc","Average wind speec (WorldClim), details in Supplement Table of Climate data."
+"156","wind.sd.nc","Average wind speec (WorldClim), details in Supplement Table of Climate data."
+"157","ACDWRB_M_ss_1km_ll.tif",NA
+"158","AWCh1_M_sl1_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
+"159","AWCh1_M_sl2_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
+"160","AWCh1_M_sl3_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
+"161","AWCh1_M_sl4_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
+"162","AWCh1_M_sl5_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
+"163","AWCh1_M_sl6_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
+"164","AWCh1_M_sl7_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
+"165","AWCh2_M_sl1_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
+"166","AWCh2_M_sl2_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
+"167","AWCh2_M_sl3_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
+"168","AWCh2_M_sl4_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
+"169","AWCh2_M_sl5_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
+"170","AWCh2_M_sl6_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
+"171","AWCh2_M_sl7_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
+"172","AWCh3_M_sl1_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
+"173","AWCh3_M_sl2_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
+"174","AWCh3_M_sl3_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
+"175","AWCh3_M_sl4_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
+"176","AWCh3_M_sl5_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
+"177","AWCh3_M_sl6_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
+"178","AWCh3_M_sl7_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
+"179","AWCtS_M_sl1_1km_ll.tif","Saturated water content (SoilGrids), details in Supplement Table of Soil data."
+"180","AWCtS_M_sl2_1km_ll.tif","Saturated water content (SoilGrids), details in Supplement Table of Soil data."
+"181","AWCtS_M_sl3_1km_ll.tif","Saturated water content (SoilGrids), details in Supplement Table of Soil data."
+"182","AWCtS_M_sl4_1km_ll.tif","Saturated water content (SoilGrids), details in Supplement Table of Soil data."
+"183","AWCtS_M_sl5_1km_ll.tif","Saturated water content (SoilGrids), details in Supplement Table of Soil data."
+"184","AWCtS_M_sl6_1km_ll.tif","Saturated water content (SoilGrids), details in Supplement Table of Soil data."
+"185","AWCtS_M_sl7_1km_ll.tif","Saturated water content (SoilGrids), details in Supplement Table of Soil data."
+"186","BDTICM_M_1km_ll.tif",NA
+"187","BLDFIE_M_sl1_1km_ll.tif","Bulk density (SoilGrids), details in Supplement Table of Soil data."
+"188","BLDFIE_M_sl2_1km_ll.tif","Bulk density (SoilGrids), details in Supplement Table of Soil data."
+"189","BLDFIE_M_sl3_1km_ll.tif","Bulk density (SoilGrids), details in Supplement Table of Soil data."
+"190","BLDFIE_M_sl4_1km_ll.tif","Bulk density (SoilGrids), details in Supplement Table of Soil data."
+"191","BLDFIE_M_sl5_1km_ll.tif","Bulk density (SoilGrids), details in Supplement Table of Soil data."
+"192","BLDFIE_M_sl6_1km_ll.tif","Bulk density (SoilGrids), details in Supplement Table of Soil data."
+"193","BLDFIE_M_sl7_1km_ll.tif","Bulk density (SoilGrids), details in Supplement Table of Soil data."
+"194","CECSOL_M_sl1_1km_ll.tif","Cation exchange capacity (SoilGrids), details in Supplement Table of Soil data."
+"195","CECSOL_M_sl2_1km_ll.tif","Cation exchange capacity (SoilGrids), details in Supplement Table of Soil data."
+"196","CECSOL_M_sl3_1km_ll.tif","Cation exchange capacity (SoilGrids), details in Supplement Table of Soil data."
+"197","CECSOL_M_sl4_1km_ll.tif","Cation exchange capacity (SoilGrids), details in Supplement Table of Soil data."
+"198","CECSOL_M_sl5_1km_ll.tif","Cation exchange capacity (SoilGrids), details in Supplement Table of Soil data."
+"199","CECSOL_M_sl6_1km_ll.tif","Cation exchange capacity (SoilGrids), details in Supplement Table of Soil data."
+"200","CECSOL_M_sl7_1km_ll.tif","Cation exchange capacity (SoilGrids), details in Supplement Table of Soil data."
+"201","CLYPPT_M_sl1_1km_ll.tif","Weight percentage of the Clay particles (SoilGrids), details in Supplement Table of Soil data."
+"202","CLYPPT_M_sl2_1km_ll.tif","Weight percentage of the Clay particles (SoilGrids), details in Supplement Table of Soil data."
+"203","CLYPPT_M_sl3_1km_ll.tif","Weight percentage of the Clay particles (SoilGrids), details in Supplement Table of Soil data."
+"204","CLYPPT_M_sl4_1km_ll.tif","Weight percentage of the Clay particles (SoilGrids), details in Supplement Table of Soil data."
+"205","CLYPPT_M_sl5_1km_ll.tif","Weight percentage of the Clay particles (SoilGrids), details in Supplement Table of Soil data."
+"206","CLYPPT_M_sl6_1km_ll.tif","Weight percentage of the Clay particles (SoilGrids), details in Supplement Table of Soil data."
+"207","CLYPPT_M_sl7_1km_ll.tif","Weight percentage of the Clay particles (SoilGrids), details in Supplement Table of Soil data."
+"208","CRFVOL_M_sl1_1km_ll.tif","Coarse fragments (> 2mm) (SoilGrids), details in Supplement Table of Soil data."
+"209","CRFVOL_M_sl2_1km_ll.tif","Coarse fragments (> 2mm) (SoilGrids), details in Supplement Table of Soil data."
+"210","CRFVOL_M_sl3_1km_ll.tif","Coarse fragments (> 2mm) (SoilGrids), details in Supplement Table of Soil data."
+"211","CRFVOL_M_sl4_1km_ll.tif","Coarse fragments (> 2mm) (SoilGrids), details in Supplement Table of Soil data."
+"212","CRFVOL_M_sl5_1km_ll.tif","Coarse fragments (> 2mm) (SoilGrids), details in Supplement Table of Soil data."
+"213","CRFVOL_M_sl6_1km_ll.tif","Coarse fragments (> 2mm) (SoilGrids), details in Supplement Table of Soil data."
+"214","CRFVOL_M_sl7_1km_ll.tif","Coarse fragments (> 2mm) (SoilGrids), details in Supplement Table of Soil data."
+"215","OCDENS_M_sl1_1km_ll.tif","Soil organic carbon density (SoilGrids), details in Supplement Table of Soil data."
+"216","OCDENS_M_sl2_1km_ll.tif","Soil organic carbon density (SoilGrids), details in Supplement Table of Soil data."
+"217","OCDENS_M_sl3_1km_ll.tif","Soil organic carbon density (SoilGrids), details in Supplement Table of Soil data."
+"218","OCDENS_M_sl4_1km_ll.tif","Soil organic carbon density (SoilGrids), details in Supplement Table of Soil data."
+"219","OCDENS_M_sl5_1km_ll.tif","Soil organic carbon density (SoilGrids), details in Supplement Table of Soil data."
+"220","OCDENS_M_sl6_1km_ll.tif","Soil organic carbon density (SoilGrids), details in Supplement Table of Soil data."
+"221","OCDENS_M_sl7_1km_ll.tif","Soil organic carbon density (SoilGrids), details in Supplement Table of Soil data."
+"222","OCSTHA_M_100cm_1km_ll.tif","Soil organic carbon stock (SoilGrids), details in Supplement Table of Soil data."
+"223","OCSTHA_M_200cm_1km_ll.tif","Soil organic carbon stock (SoilGrids), details in Supplement Table of Soil data."
+"224","OCSTHA_M_30cm_1km_ll.tif","Soil organic carbon stock (SoilGrids), details in Supplement Table of Soil data."
+"225","OCSTHA_M_sd1_1km_ll.tif","Soil organic carbon stock (SoilGrids), details in Supplement Table of Soil data."
+"226","OCSTHA_M_sd2_1km_ll.tif","Soil organic carbon stock (SoilGrids), details in Supplement Table of Soil data."
+"227","OCSTHA_M_sd3_1km_ll.tif","Soil organic carbon stock (SoilGrids), details in Supplement Table of Soil data."
+"228","OCSTHA_M_sd4_1km_ll.tif","Soil organic carbon stock (SoilGrids), details in Supplement Table of Soil data."
+"229","OCSTHA_M_sd5_1km_ll.tif","Soil organic carbon stock (SoilGrids), details in Supplement Table of Soil data."
+"230","OCSTHA_M_sd6_1km_ll.tif","Soil organic carbon stock (SoilGrids), details in Supplement Table of Soil data."
+"231","ORCDRC_M_sl1_1km_ll.tif","Soil organic carbon content (SoilGrids), details in Supplement Table of Soil data."
+"232","ORCDRC_M_sl2_1km_ll.tif","Soil organic carbon content (SoilGrids), details in Supplement Table of Soil data."
+"233","ORCDRC_M_sl3_1km_ll.tif","Soil organic carbon content (SoilGrids), details in Supplement Table of Soil data."
+"234","ORCDRC_M_sl4_1km_ll.tif","Soil organic carbon content (SoilGrids), details in Supplement Table of Soil data."
+"235","ORCDRC_M_sl5_1km_ll.tif","Soil organic carbon content (SoilGrids), details in Supplement Table of Soil data."
+"236","ORCDRC_M_sl6_1km_ll.tif","Soil organic carbon content (SoilGrids), details in Supplement Table of Soil data."
+"237","ORCDRC_M_sl7_1km_ll.tif","Soil organic carbon content (SoilGrids), details in Supplement Table of Soil data."
+"238","PHIKCL_M_sl1_1km_ll.tif","pH measured with KCl (SoilGrids), details in Supplement Table of Soil data."
+"239","PHIKCL_M_sl2_1km_ll.tif","pH measured with KCl (SoilGrids), details in Supplement Table of Soil data."
+"240","PHIKCL_M_sl3_1km_ll.tif","pH measured with KCl (SoilGrids), details in Supplement Table of Soil data."
+"241","PHIKCL_M_sl4_1km_ll.tif","pH measured with KCl (SoilGrids), details in Supplement Table of Soil data."
+"242","PHIKCL_M_sl5_1km_ll.tif","pH measured with KCl (SoilGrids), details in Supplement Table of Soil data."
+"243","PHIKCL_M_sl6_1km_ll.tif","pH measured with KCl (SoilGrids), details in Supplement Table of Soil data."
+"244","PHIKCL_M_sl7_1km_ll.tif","pH measured with KCl (SoilGrids), details in Supplement Table of Soil data."
+"245","SLTPPT_M_sl1_1km_ll.tif","Weight percentage of the Silt particles (SoilGrids), details in Supplement Table of Soil data."
+"246","SLTPPT_M_sl2_1km_ll.tif","Weight percentage of the Silt particles (SoilGrids), details in Supplement Table of Soil data."
+"247","SLTPPT_M_sl3_1km_ll.tif","Weight percentage of the Silt particles (SoilGrids), details in Supplement Table of Soil data."
+"248","SLTPPT_M_sl4_1km_ll.tif","Weight percentage of the Silt particles (SoilGrids), details in Supplement Table of Soil data."
+"249","SLTPPT_M_sl5_1km_ll.tif","Weight percentage of the Silt particles (SoilGrids), details in Supplement Table of Soil data."
+"250","SLTPPT_M_sl6_1km_ll.tif","Weight percentage of the Silt particles (SoilGrids), details in Supplement Table of Soil data."
+"251","SLTPPT_M_sl7_1km_ll.tif","Weight percentage of the Silt particles (SoilGrids), details in Supplement Table of Soil data."
+"252","SNDPPT_M_sl1_1km_ll.tif","Weight percentage of the Sand particles (SoilGrids), details in Supplement Table of Soil data."
+"253","SNDPPT_M_sl2_1km_ll.tif","Weight percentage of the Sand particles (SoilGrids), details in Supplement Table of Soil data."
+"254","SNDPPT_M_sl3_1km_ll.tif","Weight percentage of the Sand particles (SoilGrids), details in Supplement Table of Soil data."
+"255","SNDPPT_M_sl4_1km_ll.tif","Weight percentage of the Sand particles (SoilGrids), details in Supplement Table of Soil data."
+"256","SNDPPT_M_sl5_1km_ll.tif","Weight percentage of the Sand particles (SoilGrids), details in Supplement Table of Soil data."
+"257","SNDPPT_M_sl6_1km_ll.tif","Weight percentage of the Sand particles (SoilGrids), details in Supplement Table of Soil data."
+"258","SNDPPT_M_sl7_1km_ll.tif","Weight percentage of the Sand particles (SoilGrids), details in Supplement Table of Soil data."
+"259","WWP_M_sl1_1km_ll.tif","Available soil water capacity (vol) until wilting point (SoilGrids), details in Supplement Table of Soil data."
+"260","WWP_M_sl2_1km_ll.tif","Available soil water capacity (vol) until wilting point (SoilGrids), details in Supplement Table of Soil data."
+"261","WWP_M_sl3_1km_ll.tif","Available soil water capacity (vol) until wilting point (SoilGrids), details in Supplement Table of Soil data."
+"262","WWP_M_sl4_1km_ll.tif","Available soil water capacity (vol) until wilting point (SoilGrids), details in Supplement Table of Soil data."
+"263","WWP_M_sl5_1km_ll.tif","Available soil water capacity (vol) until wilting point (SoilGrids), details in Supplement Table of Soil data."
+"264","WWP_M_sl6_1km_ll.tif","Available soil water capacity (vol) until wilting point (SoilGrids), details in Supplement Table of Soil data."
+"265","WWP_M_sl7_1km_ll.tif","Available soil water capacity (vol) until wilting point (SoilGrids), details in Supplement Table of Soil data."
+"266","observation.count","Number of observed samples for all of traits of this (ecoregion-)species."
+"267","max.lat","Maximum latitudinal extend of this ecoregion."
+"268","min.lat","Minimum latitudinal extend of this ecoregion."
+"269","max.lon","Maximum longitudinal extend of this ecoregion."
+"270","min.lon","Minimmum longitudinal extend of this ecoregion."
+"271","observation.count.LeArea","Number of observed samples for this trait."
+"272","observation.count.SSD","Number of observed samples for this trait."
+"273","observation.count.SLA","Number of observed samples for this trait."
+"274","observation.count.LeC","Number of observed samples for this trait."
+"275","observation.count.LeN","Number of observed samples for this trait."
+"276","observation.count.LeP","Number of observed samples for this trait."
+"277","observation.count.PlantHeight","Number of observed samples for this trait."
+"278","observation.count.SeedMass","Number of observed samples for this trait."
+"279","observation.count.SeLen","Number of observed samples for this trait."
+"280","observation.count.LeNArea","Number of observed samples for this trait."
+"281","observation.count.LeNP","Number of observed samples for this trait."
+"282","observation.count.Led15N","Number of observed samples for this trait."
+"283","observation.count.SenbU","Number of observed samples for this trait."
+"284","observation.count.LeFMass","Number of observed samples for this trait."
+"285","observation.count.ConduitDens","Number of observed samples for this trait."
+"286","observation.count.VesLen","Number of observed samples for this trait."
+"287","observation.count.DispULen","Number of observed samples for this trait."
