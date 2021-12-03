@@ -1,5 +1,20 @@
-pl_CoefVar <- functio(origin){
-  
+# ---------------------------------------------------------------------------------------
+# 01. define the origin path
+# ---------------------------------------------------------------------------------------
+# origin = # please add your local path here & comment the ones below.
+# origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/20210907_Script_data/Supplement" # please add your local path here 
+list.files(file.path(origin,"scripts/_master"))
+
+# load functions
+source(file.path(origin,"scripts" ,"_master","fn_functions.R"))
+# packages
+source(file.path(origin,"scripts" ,"_master","fn_packages.R"))
+
+
+if(!file.exists(file.path(origin,"figures","Supplement_Fig_42"))){
+  dir.create(file.path(origin,"figures","Supplement_Fig_42"))}
+
+
   # load data
   output_term=""
   load(file = file.path(origin,"data","master_matrix",paste0("X2",output_term,".RData")))
@@ -32,9 +47,6 @@ pl_CoefVar <- functio(origin){
   boxplot(TRY_Env_obs[,grep(names(TRY_Env_obs),pattern = "sd.unique_spec.")],las=2,
         col=color_to_traits(trait_names))
 
-  if(!dir.exists(file.path(origin,"figures","Supplement_Fig_42"))){
-    dir.create(file.path(origin,"figures","Supplement_Fig_42"))}
-  
   
   pdf(file=file.path(origin,"figures","Supplement_Fig_42","figure_S_CoefAggreg.pdf"),width = 8,height = 6)
   

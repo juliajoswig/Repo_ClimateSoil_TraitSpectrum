@@ -1,5 +1,20 @@
-plot_Figure_x <- function(origin,output_term){
-  
+# ---------------------------------------------------------------------------------------
+# 01. define the origin path
+# ---------------------------------------------------------------------------------------
+# origin = # please add your local path here & comment the ones below.
+# origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/20210907_Script_data/Supplement" # please add your local path here 
+list.files(file.path(origin,"scripts/_master"))
+
+# load functions
+source(file.path(origin,"scripts" ,"_master","fn_functions.R"))
+# packages
+source(file.path(origin,"scripts" ,"_master","fn_packages.R"))
+
+
+if(!file.exists(file.path(origin,"figures","Supplement_Fig_41"))){
+  dir.create(file.path(origin,"figures","Supplement_Fig_41"))}
+
+
   
   # ------------
   # load data
@@ -100,9 +115,7 @@ plot_Figure_x <- function(origin,output_term){
   #----------------------------------------------------------------------------
   # plot the PC1 against absolute latitude
   #----------------------------------------------------------------------------
-  if(!dir.exists(file.path(origin,"figures","Supplement_Fig_41"))){
-    dir.create(file.path(origin,"figures","Supplement_Fig_41"))}
-  
+
   pdf(file=file.path(origin,"figures","Supplement_Fig_41","Figure_S_Dip29to36PrecSand.pdf"),width = 10,height = 10)
     par(mfrow=c(2,2),mar=c(6,6,2,2))
     

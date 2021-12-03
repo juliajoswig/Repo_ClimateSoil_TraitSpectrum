@@ -19,15 +19,11 @@ setwd("/Net/Groups")
 orig_loctem ="/Volumes/BGI" # local
 orig_loctem =  "BGI"#"/Volumes/BGI" 
 output_term = "" 
-list.files(file.path(orig_loctem,"work_1/2018_Dichotomy/FINAL/Submission/00_Prepare_for_submission"))
-origin = file.path(orig_loctem,"work_1/2018_Dichotomy/FINAL/NEE/Supplement")
-#OLD #origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/20210907_Script_data/Supplement"
-# origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/Repo_ClimateSoil_TraitSpectrum/Supplement" 
-# origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/put_into_repository/Supplement" 
+origin = "/Users/jjoswig/Documents/_docs/03_projects/2021/002_Dichotomy/_script_data/Repo_ClimateSoil_TraitSpectrum/Supplement" 
+# origin = # please add your local path here & comment the ones below.
 
 list.files(file.path(origin,"scripts/_master"))
 
-# origin = # please add your local path here & comment the ones below.
 
 # load functions
 source(file.path(origin,"scripts" ,"_master","fn_functions.R"))
@@ -149,9 +145,7 @@ for(output_term in output_terms){# loop through all analyses
 # Supplement Fig. 2: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_2","fig_Bias.R")
 # with output_term="bias1" AND "bias2" AND "bias3"
 # Supplement Fig. 3: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","pl_Figure_S_noSelComp.R") 
-
 # Supplement Fig. 4: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_4","fig_") # MISSING
-
 # Supplement Fig. 5: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_5","pl_Figure_PCA_loadings_VarExpl.R")
 # Supplement Fig. 6: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_6","pl_Figure_PCA_loadings_VarExpl.R")
 # Supplement Fig. 7: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_7","pl_Figure_S_WoNb.R")
@@ -182,47 +176,10 @@ for(output_term in output_terms){# loop through all analyses
 # file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_18", "Latex_Fig18to39_1of2.tex")
 # file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_18", "Latex_Fig18to39_2of2.tex")
 
+# Supplement Fig. 40: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_40","pl_Figure_S_DipBiome.R")
+# Supplement Fig. 41: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_41","pl_Figure_S_Dip29to36PrecSand.R")
+# Supplement Fig. 42: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_42","pl_Figure_S_CoefVar.R")
 
-
-
-# Supplement Fig. 19: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_ 3","fig_")
-# Supplement Fig. 20: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
-# Supplement Fig. 12: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
-# Supplement Fig. 12: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
-# Supplement Fig. 12: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
-# Supplement Fig. 12: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
-# Supplement Fig. 12: file.path(origin,"scripts","02_figure_functions","Supplementary_Fig_3","fig_")
-
-if(!file.exists(file.path(origin,"figures","Supplement_Fig_3"))){
-  dir.create(file.path(origin,"figures","Supplement_Fig_3"))}
-
-if(!file.exists(file.path(origin,"figures","Supplement_Fig_17"))){
-  dir.create(file.path(origin,"figures","Supplement_Fig_17"))}
-source(file.path(origin,"scripts","02_figure_functions","Supplemenary Fig 17","fig_ModelComp.R"))#install.packages "likert"
-
-
-# woody non-woody
-# PCA:
-plot_Figure_S_PCA_loadings(origin)
-#  plot_Figure_S_WoNa(origin,output_term="woody")
-#  plot_Figure_S_WoNa(origin,output_term="non_woody")
-plot_Figure_S_WoNb(origin,output_term="woody")
-plot_Figure_S_WoNb(origin,output_term="non_woody")
-plot_Figure_S_WoNc(origin,output_term="woody")
-plot_Figure_S_WoNc(origin,output_term="non_woody")
-# Pattern robustness
-plot_Figure_S_TraitsEnv_lm(origin,climOsoil,output_term)
-plot_Figure_S_PCA_HP(origin,doPCA)
-pl_CoefVar(origin)    
-out <- plot_Figure_S_Obs(origin,nruns=50,doPCA,climOsoil="soilAnoise")
-pdf(file=file.path(origin,"figures","figure_S_Obs",paste0("figure_S_Obs_doPCA_noSelmin50ER.pdf")))
-par(mfrow=c(1,1),mar=c(8,8,2,2))
-try(plot(out$dfs,group.order = out$target_order1) + 
-      ggtitle(title)+ 
-      ylab("% of trait variance explained by the soil and/or noise")+
-      scale_fill_manual(values=c(climate_col, soil_col, "lightgray"),drop=TRUE))
-dev.off()
-pl_Figure_S_DipBiome(origin)
 
 #------------------------------------------------------------------------------------
 # [4.] create the tables
@@ -235,108 +192,6 @@ tab_S_ER(origin,trait,info)
 
 #------------------------------------------------------------------------------------
 # Additions:
-nruns=50
-output_term=""
-load(file.path(origin, "data", "_results","RidgeRegression","_RidgeRegression_results",paste0("HP_",nruns,"nruns_", output_term,".RData")))
-load(file.path(origin, "data", "_results","RidgeRegression","_RidgeRegression_results",paste0("R2_",nruns,"nruns_", output_term,".RData")))
-# for loading other model results, see "002b_Hierarchical_Partitioning.R" for paths.
-
-res=r2_l$soilAclimate$r2_soilAclimate
-print("Overall, size traits are better explained by the climate and soil dataset")
-print(paste0("Size trait maximum r2: ",round(max(colMeans(res[,put_into_traitGroup(colnames(res))=="Size"])),digits = 2)))
-print(paste0("Size trait mean r2: ",round(mean(colMeans(res[,put_into_traitGroup(colnames(res))=="Size"])),digits = 2)))
-print(paste0("Economics trait maximum r2: ",round(max(colMeans(res[,put_into_traitGroup(colnames(res))=="Eco"])),digits = 2)))
-print(paste0("Economics trait mean r2: ",round(mean(colMeans(res[,put_into_traitGroup(colnames(res))=="Eco"])),digits = 2)))
-
-res_c=hp_l$soilAclimate$indep_climate-hp_l$soilAclimate$joint_climate
-res_s=hp_l$soilAclimate$indep_soil-hp_l$soilAclimate$joint_soil
-print("Overall, size traits are explained by climate variables and economics traits by the climate and soil variables")
-print(paste0("Size trait indep effect CLIMATE (mean): ",round(mean(colMeans(res_c[,put_into_traitGroup(colnames(res_c))=="Size"])),digits = 2)))
-print(paste0("Economics trait indep effect CLIMATE (mean): ",round(mean(colMeans(res_c[,put_into_traitGroup(colnames(res_c))=="Eco"])),digits = 2)))
-print(paste0("Size trait indep effect SOIL (mean): ",round(mean(colMeans(res_s[,put_into_traitGroup(colnames(res_s))=="Size"])),digits = 2)))
-print(paste0("Economics trait indep effect SOIL (mean): ",round(mean(colMeans(res_s[,put_into_traitGroup(colnames(res_s))=="Eco"])),digits = 2)))
-
-# load analysis Ridge Regression
-sel_now="soilAclimate"
-out_now <- load_analysis_RidgeRegression(origin,nruns,folds,Appr_type_now,firstname,secondname,nruns,output_term,ncomp_PCA,do_PCA)  
-hp_now <- hierarchical_partitioning(origin,out_now,output_term,oldData,out_rf,model_now="Ridge_Regression",trait_2,sel_now)
-
-#-----------------------------------------------------------------------
-# mean Size r2
-# mean Eco r2
-#-----------------------------------------------------------------------
-mean(colMeans(out_now$r2_soilAclimate[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Size"]))
-mean(colMeans(out_now$r2_soilAclimate[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Eco"]))
-#-----------------------------------------------------------------------
-# max Size r2
-# max Eco r2
-#-----------------------------------------------------------------------
-max(colMeans(out_now$r2_soilAclimate[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Size"]))
-which(max(colMeans(out_now$r2_soilAclimate[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Size"]))==colMeans(out_now$r2_soilAclimate[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Size"])) 
-max(colMeans(out_now$r2_soilAclimate[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Eco"]))
-which(max(colMeans(out_now$r2_soilAclimate[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Eco"]))==colMeans(out_now$r2_soilAclimate[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Eco"])) 
-#-----------------------------------------------------------------------
-# climate r2
-#-----------------------------------------------------------------------
-min(colMeans(out_now$r2_climate))
-max(colMeans(out_now$r2_climate))
-mean(colMeans(out_now$r2_climate))
-#size
-min(colMeans(out_now$r2_climate[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Size"]))
-max(colMeans(out_now$r2_climate[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Size"]))
-mean(colMeans(out_now$r2_climate[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Size"]))
-
-#Eco
-min(colMeans(out_now$r2_climate[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Eco"]))
-max(colMeans(out_now$r2_climate[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Eco"]))
-mean(colMeans(out_now$r2_climate[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Eco"]))
-
-#-----------------------------------------------------------------------
-# soil r2
-#-----------------------------------------------------------------------
-min(colMeans(out_now$r2_soil))
-max(colMeans(out_now$r2_soil))
-mean(colMeans(out_now$r2_soil))
-#size
-min(colMeans(out_now$r2_soil[,put_into_traitGroup(colnames(out_now$r2_soil))=="Size"]))
-max(colMeans(out_now$r2_soil[,put_into_traitGroup(colnames(out_now$r2_soil))=="Size"]))
-mean(colMeans(out_now$r2_soil[,put_into_traitGroup(colnames(out_now$r2_soil))=="Size"]))
-
-#Eco
-min(colMeans(out_now$r2_soil[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Eco"]))
-max(colMeans(out_now$r2_soil[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Eco"]))
-mean(colMeans(out_now$r2_soil[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Eco"]))
-
-#-----------------------------------------------------------------------
-# independent r2
-#-----------------------------------------------------------------------
-i_s=hp_now$indep_soil-hp_now$joint_soil
-i_s[i_s<0]=0
-colMeans(i_s)*100
-mean(colMeans(i_s)*100)
-# climate size   
-max(colMeans(i_s[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Size"])*100)
-min(colMeans(i_s[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Size"])*100)
-mean(colMeans(i_s[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Size"])*100)
-# climate eco   
-max(colMeans(i_s[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Eco"])*100)
-min(colMeans(i_s[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Eco"])*100)
-mean(colMeans(i_s[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Eco"])*100)
-
-i_c=hp_now$indep_climate-hp_now$joint_climate
-i_c[i_c<0]=0
-colMeans(i_c)*100
-max(colMeans(i_c)*100)
-min(colMeans(i_c)*100)
-mean(colMeans(i_c)*100)
-# climate size   
-max(colMeans(i_c[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Size"])*100)
-min(colMeans(i_c[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Size"])*100)
-mean(colMeans(i_c[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Size"])*100)
-# climate eco   
-max(colMeans(i_c[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Eco"])*100)
-min(colMeans(i_c[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Eco"])*100)
-mean(colMeans(i_c[,put_into_traitGroup(colnames(out_now$r2_soilAclimate))=="Eco"])*100)
 
 # + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +   
 
