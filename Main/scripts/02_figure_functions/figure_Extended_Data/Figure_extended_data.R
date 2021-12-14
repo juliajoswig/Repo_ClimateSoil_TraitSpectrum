@@ -1,3 +1,4 @@
+# This figure requires loading of ESRI files, which are not provided in this folder.
 Figure_extended_data <- function(origin){
   
   
@@ -130,24 +131,6 @@ Figure_extended_data <- function(origin){
   
   
 }
-
-
-
-#info_obs <- cbind(TRY_Env[names(TRY_Env)=="Kier_richness"|
-#                            names(TRY_Env)=="ECO_ID"|
-#                            names(TRY_Env)=="ECO_NAME"|
-#                            names(TRY_Env)=="BIOME"|
-#                            names(TRY_Env)=="species.count"|
-#                            names(TRY_Env)=="observation.count.tot"|
-#                            names(TRY_Env)=="Lat"|
-#                            names(TRY_Env)=="Lon"|
-#                            names(TRY_Env)=="min.lat"|
-#                            names(TRY_Env)=="max.lat"|
-#                            names(TRY_Env)=="min.lon"|
-#                            names(TRY_Env)=="max.lon"|
-#                  TRY_Env[grep(names(TRY_Env),pattern = "observation.count.")]
-#                            names(TRY_Env)=="Kier_area"],
-#)
 
 
 
