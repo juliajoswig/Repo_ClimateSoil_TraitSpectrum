@@ -21,8 +21,8 @@
   
 # load functions from functions scripts
   source(file.path(origin,"scripts" ,"_support_functions","fn_functions.R"))
-# Errors: load table_1.R no working 
-  source(file.path(origin,"scripts" ,"_support_functions","fn_packages.R"))# check, this does not exist.
+# load packages necessary
+  source(file.path(origin,"scripts" ,"_support_functions","fn_packages.R"))
 
 
 #------------------------------------------------------------------------------------
