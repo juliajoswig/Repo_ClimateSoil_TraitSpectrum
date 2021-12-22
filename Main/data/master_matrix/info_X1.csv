@@ -1,285 +1,234 @@
 "","V1","V2"
 "1","X",NA
-"2","Group.1",NA
-"3","Group.2",NA
-"4","Lon",NA
-"5","Lat",NA
-"6","OBJECTID",NA
-"7","AREA",NA
-"8","PERIMETER",NA
-"9","ECO_NAME",NA
-"10","REALM",NA
-"11","BIOME",NA
-"12","ECO_NUM",NA
-"13","ECO_ID",NA
-"14","ECO_SYM",NA
-"15","GBL_STAT",NA
-"16","G200_REGIO",NA
-"17","G200_NUM",NA
-"18","G200_BIOME",NA
-"19","G200_STAT",NA
-"20","Shape_Leng",NA
-"21","Shape_Area",NA
-"22","area_km2",NA
-"23","eco_code",NA
-"24","PER_area",NA
-"25","PER_area_1",NA
-"26","PER_area_2",NA
-"27","NA.",NA
-"28","X_obs",NA
-"29","AccSpeciesID.x_obs",NA
-"30","AccSpeciesName_obs",NA
-"31","Lat_obs",NA
-"32","Lon_obs",NA
-"33","AccSpeciesID.y_obs",NA
-"34","Species_obs",NA
-"35","Genus_obs",NA
-"36","Family_obs",NA
-"37","PhylogeneticGroup_obs",NA
-"38","Exposition_obs",NA
-"39","Maturity_obs",NA
-"40","PlantGrowthForm_obs",NA
-"41","LeafType_obs",NA
-"42","LeafCompoundness_obs",NA
-"43","TypicalNumberOfLeaflets_obs",NA
-"44","DbComment_obs",NA
-"45","ObservationID.1_obs",NA
-"46","LeArea_obs",NA
-"47","SSD_obs",NA
-"48","SLA_obs",NA
-"49","LeC_obs",NA
-"50","LeN_obs",NA
-"51","LeP_obs",NA
-"52","PlantHeight_obs",NA
-"53","SeedMass_obs",NA
-"54","SeLen_obs",NA
-"55","LeNArea_obs",NA
-"56","LeNP_obs",NA
-"57","Led15N_obs",NA
-"58","SenbU_obs",NA
-"59","LeFMass_obs",NA
-"60","ConduitDens_obs",NA
-"61","DispULen_obs",NA
-"62","VesLen_obs",NA
-"63","X_pred",NA
-"64","AccSpeciesID.x_pred",NA
-"65","AccSpeciesName_pred",NA
-"66","Lat_pred",NA
-"67","Lon_pred",NA
-"68","AccSpeciesID.y_pred",NA
-"69","Species_pred",NA
-"70","Genus_pred",NA
-"71","Family_pred",NA
-"72","PhylogeneticGroup_pred",NA
-"73","Exposition_pred",NA
-"74","Maturity_pred",NA
-"75","PlantGrowthForm_pred",NA
-"76","LeafType_pred",NA
-"77","LeafCompoundness_pred",NA
-"78","TypicalNumberOfLeaflets_pred",NA
-"79","DbComment_pred",NA
-"80","ObservationID.1_pred",NA
-"81","LeArea_pred",NA
-"82","SSD_pred",NA
-"83","SLA_pred",NA
-"84","LeC_pred",NA
-"85","LeN_pred",NA
-"86","LeP_pred",NA
-"87","PlantHeight_pred",NA
-"88","SeedMass_pred",NA
-"89","SeLen_pred",NA
-"90","LeNArea_pred",NA
-"91","LeNP_pred",NA
-"92","Led15N_pred",NA
-"93","SenbU_pred",NA
-"94","LeFMass_pred",NA
-"95","ConduitDens_pred",NA
-"96","DispULen_pred",NA
-"97","VesLen_pred",NA
-"98","X_gf",NA
-"99","AccSpeciesID.x_gf",NA
-"100","AccSpeciesName_gf",NA
-"101","Lat_gf",NA
-"102","Lon_gf",NA
-"103","AccSpeciesID.y_gf",NA
-"104","Species_gf",NA
-"105","Genus_gf",NA
-"106","Family_gf",NA
-"107","PhylogeneticGroup_gf",NA
-"108","Exposition_gf",NA
-"109","Maturity_gf",NA
-"110","PlantGrowthForm_gf",NA
-"111","LeafType_gf",NA
-"112","LeafCompoundness_gf",NA
-"113","TypicalNumberOfLeaflets_gf",NA
-"114","DbComment_gf",NA
-"115","ObservationID.1_gf",NA
-"116","LeArea_gf",NA
-"117","SSD_gf",NA
-"118","SLA_gf",NA
-"119","LeC_gf",NA
-"120","LeN_gf",NA
-"121","LeP_gf",NA
-"122","PlantHeight_gf",NA
-"123","SeedMass_gf",NA
-"124","SeLen_gf",NA
-"125","LeNArea_gf",NA
-"126","LeNP_gf",NA
-"127","Led15N_gf",NA
-"128","SenbU_gf",NA
-"129","LeFMass_gf",NA
-"130","ConduitDens_gf",NA
-"131","DispULen_gf",NA
-"132","VesLen_gf",NA
-"133","AnnualMeanTemperature.nc","Temperature (WorldClim), details in Supplement Table of Climate data."
-"134","MaxTemperatureofWarmestMonth.nc","Temperature (WorldClim), details in Supplement Table of Climate data."
-"135","MinTemperatureofColdestMonth.nc","Temperature (WorldClim), details in Supplement Table of Climate data."
-"136","TemperatureSeasonality.nc","Temperature (WorldClim), details in Supplement Table of Climate data."
-"137","MeanDiurnalRange.nc",NA
-"138","AnnualPrecipitation.nc","Precipitation (WorldClim), details in Supplement Table of Climate data."
-"139","PrecipitationofWettestMonth.nc","Precipitation (WorldClim), details in Supplement Table of Climate data."
-"140","PrecipitationofDriestMonth.nc","Precipitation (WorldClim), details in Supplement Table of Climate data."
-"141","PrecipitationSeasonality.nc","Precipitation (WorldClim), details in Supplement Table of Climate data."
-"142","vapr.mean.nc","water vapor pressure (kPa) (WorldClim), details in Supplement Table of Climate data."
-"143","vapr.max.nc","water vapor pressure (kPa) (WorldClim), details in Supplement Table of Climate data."
-"144","vapr.min.nc","water vapor pressure (kPa) (WorldClim), details in Supplement Table of Climate data."
-"145","vapr.sd.nc","water vapor pressure (kPa) (WorldClim), details in Supplement Table of Climate data."
-"146","srad.mean.nc","Solar radiation (WorldClim), details in Supplement Table of Climate data."
-"147","srad.max.nc","Solar radiation (WorldClim), details in Supplement Table of Climate data."
-"148","srad.min.nc","Solar radiation (WorldClim), details in Supplement Table of Climate data."
-"149","srad.sd.nc","Solar radiation (WorldClim), details in Supplement Table of Climate data."
-"150","wind.mean.nc","Average wind speec (WorldClim), details in Supplement Table of Climate data."
-"151","wind.max.nc","Average wind speec (WorldClim), details in Supplement Table of Climate data."
-"152","wind.min.nc","Average wind speec (WorldClim), details in Supplement Table of Climate data."
-"153","wind.sd.nc","Average wind speec (WorldClim), details in Supplement Table of Climate data."
-"154","ACDWRB_M_ss_1km_ll.tif",NA
-"155","AWCh1_M_sl1_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
-"156","AWCh1_M_sl2_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
-"157","AWCh1_M_sl3_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
-"158","AWCh1_M_sl4_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
-"159","AWCh1_M_sl5_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
-"160","AWCh1_M_sl6_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
-"161","AWCh1_M_sl7_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
-"162","AWCh2_M_sl1_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
-"163","AWCh2_M_sl2_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
-"164","AWCh2_M_sl3_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
-"165","AWCh2_M_sl4_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
-"166","AWCh2_M_sl5_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
-"167","AWCh2_M_sl6_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
-"168","AWCh2_M_sl7_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
-"169","AWCh3_M_sl1_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
-"170","AWCh3_M_sl2_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
-"171","AWCh3_M_sl3_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
-"172","AWCh3_M_sl4_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
-"173","AWCh3_M_sl5_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
-"174","AWCh3_M_sl6_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
-"175","AWCh3_M_sl7_1km_ll.tif","Available water capacity (SoilGrids), details in Supplement Table of Soil data."
-"176","AWCtS_M_sl1_1km_ll.tif","Saturated water content (SoilGrids), details in Supplement Table of Soil data."
-"177","AWCtS_M_sl2_1km_ll.tif","Saturated water content (SoilGrids), details in Supplement Table of Soil data."
-"178","AWCtS_M_sl3_1km_ll.tif","Saturated water content (SoilGrids), details in Supplement Table of Soil data."
-"179","AWCtS_M_sl4_1km_ll.tif","Saturated water content (SoilGrids), details in Supplement Table of Soil data."
-"180","AWCtS_M_sl5_1km_ll.tif","Saturated water content (SoilGrids), details in Supplement Table of Soil data."
-"181","AWCtS_M_sl6_1km_ll.tif","Saturated water content (SoilGrids), details in Supplement Table of Soil data."
-"182","AWCtS_M_sl7_1km_ll.tif","Saturated water content (SoilGrids), details in Supplement Table of Soil data."
-"183","BDTICM_M_1km_ll.tif",NA
-"184","BLDFIE_M_sl1_1km_ll.tif","Bulk density (SoilGrids), details in Supplement Table of Soil data."
-"185","BLDFIE_M_sl2_1km_ll.tif","Bulk density (SoilGrids), details in Supplement Table of Soil data."
-"186","BLDFIE_M_sl3_1km_ll.tif","Bulk density (SoilGrids), details in Supplement Table of Soil data."
-"187","BLDFIE_M_sl4_1km_ll.tif","Bulk density (SoilGrids), details in Supplement Table of Soil data."
-"188","BLDFIE_M_sl5_1km_ll.tif","Bulk density (SoilGrids), details in Supplement Table of Soil data."
-"189","BLDFIE_M_sl6_1km_ll.tif","Bulk density (SoilGrids), details in Supplement Table of Soil data."
-"190","BLDFIE_M_sl7_1km_ll.tif","Bulk density (SoilGrids), details in Supplement Table of Soil data."
-"191","CECSOL_M_sl1_1km_ll.tif","Cation exchange capacity (SoilGrids), details in Supplement Table of Soil data."
-"192","CECSOL_M_sl2_1km_ll.tif","Cation exchange capacity (SoilGrids), details in Supplement Table of Soil data."
-"193","CECSOL_M_sl3_1km_ll.tif","Cation exchange capacity (SoilGrids), details in Supplement Table of Soil data."
-"194","CECSOL_M_sl4_1km_ll.tif","Cation exchange capacity (SoilGrids), details in Supplement Table of Soil data."
-"195","CECSOL_M_sl5_1km_ll.tif","Cation exchange capacity (SoilGrids), details in Supplement Table of Soil data."
-"196","CECSOL_M_sl6_1km_ll.tif","Cation exchange capacity (SoilGrids), details in Supplement Table of Soil data."
-"197","CECSOL_M_sl7_1km_ll.tif","Cation exchange capacity (SoilGrids), details in Supplement Table of Soil data."
-"198","CLYPPT_M_sl1_1km_ll.tif","Weight percentage of the Clay particles (SoilGrids), details in Supplement Table of Soil data."
-"199","CLYPPT_M_sl2_1km_ll.tif","Weight percentage of the Clay particles (SoilGrids), details in Supplement Table of Soil data."
-"200","CLYPPT_M_sl3_1km_ll.tif","Weight percentage of the Clay particles (SoilGrids), details in Supplement Table of Soil data."
-"201","CLYPPT_M_sl4_1km_ll.tif","Weight percentage of the Clay particles (SoilGrids), details in Supplement Table of Soil data."
-"202","CLYPPT_M_sl5_1km_ll.tif","Weight percentage of the Clay particles (SoilGrids), details in Supplement Table of Soil data."
-"203","CLYPPT_M_sl6_1km_ll.tif","Weight percentage of the Clay particles (SoilGrids), details in Supplement Table of Soil data."
-"204","CLYPPT_M_sl7_1km_ll.tif","Weight percentage of the Clay particles (SoilGrids), details in Supplement Table of Soil data."
-"205","CRFVOL_M_sl1_1km_ll.tif","Coarse fragments (> 2mm) (SoilGrids), details in Supplement Table of Soil data."
-"206","CRFVOL_M_sl2_1km_ll.tif","Coarse fragments (> 2mm) (SoilGrids), details in Supplement Table of Soil data."
-"207","CRFVOL_M_sl3_1km_ll.tif","Coarse fragments (> 2mm) (SoilGrids), details in Supplement Table of Soil data."
-"208","CRFVOL_M_sl4_1km_ll.tif","Coarse fragments (> 2mm) (SoilGrids), details in Supplement Table of Soil data."
-"209","CRFVOL_M_sl5_1km_ll.tif","Coarse fragments (> 2mm) (SoilGrids), details in Supplement Table of Soil data."
-"210","CRFVOL_M_sl6_1km_ll.tif","Coarse fragments (> 2mm) (SoilGrids), details in Supplement Table of Soil data."
-"211","CRFVOL_M_sl7_1km_ll.tif","Coarse fragments (> 2mm) (SoilGrids), details in Supplement Table of Soil data."
-"212","OCDENS_M_sl1_1km_ll.tif","Soil organic carbon density (SoilGrids), details in Supplement Table of Soil data."
-"213","OCDENS_M_sl2_1km_ll.tif","Soil organic carbon density (SoilGrids), details in Supplement Table of Soil data."
-"214","OCDENS_M_sl3_1km_ll.tif","Soil organic carbon density (SoilGrids), details in Supplement Table of Soil data."
-"215","OCDENS_M_sl4_1km_ll.tif","Soil organic carbon density (SoilGrids), details in Supplement Table of Soil data."
-"216","OCDENS_M_sl5_1km_ll.tif","Soil organic carbon density (SoilGrids), details in Supplement Table of Soil data."
-"217","OCDENS_M_sl6_1km_ll.tif","Soil organic carbon density (SoilGrids), details in Supplement Table of Soil data."
-"218","OCDENS_M_sl7_1km_ll.tif","Soil organic carbon density (SoilGrids), details in Supplement Table of Soil data."
-"219","OCSTHA_M_100cm_1km_ll.tif","Soil organic carbon stock (SoilGrids), details in Supplement Table of Soil data."
-"220","OCSTHA_M_200cm_1km_ll.tif","Soil organic carbon stock (SoilGrids), details in Supplement Table of Soil data."
-"221","OCSTHA_M_30cm_1km_ll.tif","Soil organic carbon stock (SoilGrids), details in Supplement Table of Soil data."
-"222","OCSTHA_M_sd1_1km_ll.tif","Soil organic carbon stock (SoilGrids), details in Supplement Table of Soil data."
-"223","OCSTHA_M_sd2_1km_ll.tif","Soil organic carbon stock (SoilGrids), details in Supplement Table of Soil data."
-"224","OCSTHA_M_sd3_1km_ll.tif","Soil organic carbon stock (SoilGrids), details in Supplement Table of Soil data."
-"225","OCSTHA_M_sd4_1km_ll.tif","Soil organic carbon stock (SoilGrids), details in Supplement Table of Soil data."
-"226","OCSTHA_M_sd5_1km_ll.tif","Soil organic carbon stock (SoilGrids), details in Supplement Table of Soil data."
-"227","OCSTHA_M_sd6_1km_ll.tif","Soil organic carbon stock (SoilGrids), details in Supplement Table of Soil data."
-"228","ORCDRC_M_sl1_1km_ll.tif","Soil organic carbon content (SoilGrids), details in Supplement Table of Soil data."
-"229","ORCDRC_M_sl2_1km_ll.tif","Soil organic carbon content (SoilGrids), details in Supplement Table of Soil data."
-"230","ORCDRC_M_sl3_1km_ll.tif","Soil organic carbon content (SoilGrids), details in Supplement Table of Soil data."
-"231","ORCDRC_M_sl4_1km_ll.tif","Soil organic carbon content (SoilGrids), details in Supplement Table of Soil data."
-"232","ORCDRC_M_sl5_1km_ll.tif","Soil organic carbon content (SoilGrids), details in Supplement Table of Soil data."
-"233","ORCDRC_M_sl6_1km_ll.tif","Soil organic carbon content (SoilGrids), details in Supplement Table of Soil data."
-"234","ORCDRC_M_sl7_1km_ll.tif","Soil organic carbon content (SoilGrids), details in Supplement Table of Soil data."
-"235","PHIKCL_M_sl1_1km_ll.tif","pH measured with KCl (SoilGrids), details in Supplement Table of Soil data."
-"236","PHIKCL_M_sl2_1km_ll.tif","pH measured with KCl (SoilGrids), details in Supplement Table of Soil data."
-"237","PHIKCL_M_sl3_1km_ll.tif","pH measured with KCl (SoilGrids), details in Supplement Table of Soil data."
-"238","PHIKCL_M_sl4_1km_ll.tif","pH measured with KCl (SoilGrids), details in Supplement Table of Soil data."
-"239","PHIKCL_M_sl5_1km_ll.tif","pH measured with KCl (SoilGrids), details in Supplement Table of Soil data."
-"240","PHIKCL_M_sl6_1km_ll.tif","pH measured with KCl (SoilGrids), details in Supplement Table of Soil data."
-"241","PHIKCL_M_sl7_1km_ll.tif","pH measured with KCl (SoilGrids), details in Supplement Table of Soil data."
-"242","SLTPPT_M_sl1_1km_ll.tif","Weight percentage of the Silt particles (SoilGrids), details in Supplement Table of Soil data."
-"243","SLTPPT_M_sl2_1km_ll.tif","Weight percentage of the Silt particles (SoilGrids), details in Supplement Table of Soil data."
-"244","SLTPPT_M_sl3_1km_ll.tif","Weight percentage of the Silt particles (SoilGrids), details in Supplement Table of Soil data."
-"245","SLTPPT_M_sl4_1km_ll.tif","Weight percentage of the Silt particles (SoilGrids), details in Supplement Table of Soil data."
-"246","SLTPPT_M_sl5_1km_ll.tif","Weight percentage of the Silt particles (SoilGrids), details in Supplement Table of Soil data."
-"247","SLTPPT_M_sl6_1km_ll.tif","Weight percentage of the Silt particles (SoilGrids), details in Supplement Table of Soil data."
-"248","SLTPPT_M_sl7_1km_ll.tif","Weight percentage of the Silt particles (SoilGrids), details in Supplement Table of Soil data."
-"249","SNDPPT_M_sl1_1km_ll.tif","Weight percentage of the Sand particles (SoilGrids), details in Supplement Table of Soil data."
-"250","SNDPPT_M_sl2_1km_ll.tif","Weight percentage of the Sand particles (SoilGrids), details in Supplement Table of Soil data."
-"251","SNDPPT_M_sl3_1km_ll.tif","Weight percentage of the Sand particles (SoilGrids), details in Supplement Table of Soil data."
-"252","SNDPPT_M_sl4_1km_ll.tif","Weight percentage of the Sand particles (SoilGrids), details in Supplement Table of Soil data."
-"253","SNDPPT_M_sl5_1km_ll.tif","Weight percentage of the Sand particles (SoilGrids), details in Supplement Table of Soil data."
-"254","SNDPPT_M_sl6_1km_ll.tif","Weight percentage of the Sand particles (SoilGrids), details in Supplement Table of Soil data."
-"255","SNDPPT_M_sl7_1km_ll.tif","Weight percentage of the Sand particles (SoilGrids), details in Supplement Table of Soil data."
-"256","WWP_M_sl1_1km_ll.tif","Available soil water capacity (vol) until wilting point (SoilGrids), details in Supplement Table of Soil data."
-"257","WWP_M_sl2_1km_ll.tif","Available soil water capacity (vol) until wilting point (SoilGrids), details in Supplement Table of Soil data."
-"258","WWP_M_sl3_1km_ll.tif","Available soil water capacity (vol) until wilting point (SoilGrids), details in Supplement Table of Soil data."
-"259","WWP_M_sl4_1km_ll.tif","Available soil water capacity (vol) until wilting point (SoilGrids), details in Supplement Table of Soil data."
-"260","WWP_M_sl5_1km_ll.tif","Available soil water capacity (vol) until wilting point (SoilGrids), details in Supplement Table of Soil data."
-"261","WWP_M_sl6_1km_ll.tif","Available soil water capacity (vol) until wilting point (SoilGrids), details in Supplement Table of Soil data."
-"262","WWP_M_sl7_1km_ll.tif","Available soil water capacity (vol) until wilting point (SoilGrids), details in Supplement Table of Soil data."
-"263","observation.count","Number of observed samples for all of traits of this (ecoregion-)species."
-"264","max.lat","Maximum latitudinal extend of this ecoregion."
-"265","min.lat","Minimum latitudinal extend of this ecoregion."
-"266","max.lon","Maximum longitudinal extend of this ecoregion."
-"267","min.lon","Minimmum longitudinal extend of this ecoregion."
-"268","observation.count.LeArea","Number of observed samples for this trait."
-"269","observation.count.SSD","Number of observed samples for this trait."
-"270","observation.count.SLA","Number of observed samples for this trait."
-"271","observation.count.LeC","Number of observed samples for this trait."
-"272","observation.count.LeN","Number of observed samples for this trait."
-"273","observation.count.LeP","Number of observed samples for this trait."
-"274","observation.count.PlantHeight","Number of observed samples for this trait."
-"275","observation.count.SeedMass","Number of observed samples for this trait."
-"276","observation.count.SeLen","Number of observed samples for this trait."
-"277","observation.count.LeNArea","Number of observed samples for this trait."
-"278","observation.count.LeNP","Number of observed samples for this trait."
-"279","observation.count.Led15N","Number of observed samples for this trait."
-"280","observation.count.SenbU","Number of observed samples for this trait."
-"281","observation.count.LeFMass","Number of observed samples for this trait."
-"282","observation.count.ConduitDens","Number of observed samples for this trait."
-"283","observation.count.VesLen","Number of observed samples for this trait."
-"284","observation.count.DispULen","Number of observed samples for this trait."
+"2","ObservationID_obs","Observation ID as in TRY (ecoregion median per species, !not valid anymore! ; TRY-db.org); same for observed (obs), predicted (pred) and gap-filled (gf) data."
+"3","ObservationID_pred","Observation ID as in TRY (ecoregion median per species, !not valid anymore! ; TRY-db.org); same for observed (obs), predicted (pred) and gap-filled (gf) data."
+"4","ObservationID_gf","Observation ID as in TRY (ecoregion median per species, !not valid anymore! ; TRY-db.org); same for observed (obs), predicted (pred) and gap-filled (gf) data."
+"5","AccSpeciesID.x_obs","AccSpeciesID refers to the Species ID as in TRY (TRY-db.org); same for observed (obs), predicted (pred) and gap-filled (gf) data."
+"6","AccSpeciesID.y_obs","AccSpeciesID refers to the Species ID as in TRY (TRY-db.org); same for observed (obs), predicted (pred) and gap-filled (gf) data."
+"7","AccSpeciesID.x_pred","AccSpeciesID refers to the Species ID as in TRY (TRY-db.org); same for observed (obs), predicted (pred) and gap-filled (gf) data."
+"8","AccSpeciesID.y_pred","AccSpeciesID refers to the Species ID as in TRY (TRY-db.org); same for observed (obs), predicted (pred) and gap-filled (gf) data."
+"9","AccSpeciesID.x_gf","AccSpeciesID refers to the Species ID as in TRY (TRY-db.org); same for observed (obs), predicted (pred) and gap-filled (gf) data."
+"10","AccSpeciesID.y_gf","AccSpeciesID refers to the Species ID as in TRY (TRY-db.org); same for observed (obs), predicted (pred) and gap-filled (gf) data."
+"11","PlantGrowthForm_obs","PlantGrowthForm_obs is the growth form as in the categorical data set provided by TRY(TRY-db.org); same for observed (obs), predicted (pred) and gap-filled (gf) data."
+"12","PlantGrowthForm_pred","PlantGrowthForm_obs is the growth form as in the categorical data set provided by TRY(TRY-db.org); same for observed (obs), predicted (pred) and gap-filled (gf) data."
+"13","PlantGrowthForm_gf","PlantGrowthForm_obs is the growth form as in the categorical data set provided by TRY(TRY-db.org); same for observed (obs), predicted (pred) and gap-filled (gf) data."
+"14","Lat","Lat ist the latitudinal values (ecoregion median per species), where this individuals has been sampled.; same for observed (obs), predicted (pred) and gap-filled (gf) data."
+"15","Lat_obs","Lat ist the latitudinal values (ecoregion median per species), where this individuals has been sampled.; same for observed (obs), predicted (pred) and gap-filled (gf) data."
+"16","Lat_pred","Lat ist the latitudinal values (ecoregion median per species), where this individuals has been sampled.; same for observed (obs), predicted (pred) and gap-filled (gf) data."
+"17","Lat_gf","Lat ist the latitudinal values (ecoregion median per species), where this individuals has been sampled.; same for observed (obs), predicted (pred) and gap-filled (gf) data."
+"18","Lon","Lon ist the longitudinal values (ecoregion median per species), where this individuals has been sampled.; same for observed (obs), predicted (pred) and gap-filled (gf) data."
+"19","Lon_obs","Lon ist the longitudinal values (ecoregion median per species), where this individuals has been sampled.; same for observed (obs), predicted (pred) and gap-filled (gf) data."
+"20","Lon_pred","Lon ist the longitudinal values (ecoregion median per species), where this individuals has been sampled.; same for observed (obs), predicted (pred) and gap-filled (gf) data."
+"21","Lon_gf","Lon ist the longitudinal values (ecoregion median per species), where this individuals has been sampled.; same for observed (obs), predicted (pred) and gap-filled (gf) data."
+"22","ECO_NAME","ECO_NAME ist the name of the ecoregion according to Olson et al. 2001 in which this individual has been sampled."
+"23","REALM","REALM ist the name of the realm according to Olson et al. 2001 in which this individual has been sampled."
+"24","BIOME","BIOME ist the number of the biome according to Olson et al. 2001 in which this individual has been sampled."
+"25","G200_BIOME","BIOME ist the number of the biome according to Olson et al. 2001 in which this individual has been sampled."
+"26","ECO_ID","ECO_ID ist the ID of the ecoregion according to Olson et al. 2001 in which this individual has been sampled."
+"27","Shape_Leng","Shape_Leng refers to the lengh of the ecoregion according to Olson et al. 2001 in which this individual has been sampled."
+"28","Shape_Area","Shape_Area refers to the lengh of the ecoregion according to Olson et al. 2001 in which this individual has been sampled."
+"29","area_km2","area_km2 refers to the area in km2 of the ecoregion according to Olson et al. 2001 in which this individual has been sampled."
+"30","AWCh1_M_sl1_1km_ll.tif","Available water capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"31","AWCh1_M_sl2_1km_ll.tif","Available water capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"32","AWCh1_M_sl3_1km_ll.tif","Available water capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"33","AWCh1_M_sl4_1km_ll.tif","Available water capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"34","AWCh1_M_sl5_1km_ll.tif","Available water capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"35","AWCh1_M_sl6_1km_ll.tif","Available water capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"36","AWCh1_M_sl7_1km_ll.tif","Available water capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"37","AWCh2_M_sl1_1km_ll.tif","Available water capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"38","AWCh2_M_sl2_1km_ll.tif","Available water capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"39","AWCh2_M_sl3_1km_ll.tif","Available water capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"40","AWCh2_M_sl4_1km_ll.tif","Available water capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"41","AWCh2_M_sl5_1km_ll.tif","Available water capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"42","AWCh2_M_sl6_1km_ll.tif","Available water capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"43","AWCh2_M_sl7_1km_ll.tif","Available water capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"44","AWCh3_M_sl1_1km_ll.tif","Available water capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"45","AWCh3_M_sl2_1km_ll.tif","Available water capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"46","AWCh3_M_sl3_1km_ll.tif","Available water capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"47","AWCh3_M_sl4_1km_ll.tif","Available water capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"48","AWCh3_M_sl5_1km_ll.tif","Available water capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"49","AWCh3_M_sl6_1km_ll.tif","Available water capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"50","AWCh3_M_sl7_1km_ll.tif","Available water capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"51","AWCtS_M_sl1_1km_ll.tif","Saturated water content (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"52","AWCtS_M_sl2_1km_ll.tif","Saturated water content (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"53","AWCtS_M_sl3_1km_ll.tif","Saturated water content (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"54","AWCtS_M_sl4_1km_ll.tif","Saturated water content (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"55","AWCtS_M_sl5_1km_ll.tif","Saturated water content (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"56","AWCtS_M_sl6_1km_ll.tif","Saturated water content (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"57","AWCtS_M_sl7_1km_ll.tif","Saturated water content (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"58","BLDFIE_M_sl1_1km_ll.tif","Bulk density (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"59","BLDFIE_M_sl2_1km_ll.tif","Bulk density (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"60","BLDFIE_M_sl3_1km_ll.tif","Bulk density (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"61","BLDFIE_M_sl4_1km_ll.tif","Bulk density (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"62","BLDFIE_M_sl5_1km_ll.tif","Bulk density (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"63","BLDFIE_M_sl6_1km_ll.tif","Bulk density (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"64","BLDFIE_M_sl7_1km_ll.tif","Bulk density (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"65","CECSOL_M_sl1_1km_ll.tif","Cation exchange capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"66","CECSOL_M_sl2_1km_ll.tif","Cation exchange capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"67","CECSOL_M_sl3_1km_ll.tif","Cation exchange capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"68","CECSOL_M_sl4_1km_ll.tif","Cation exchange capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"69","CECSOL_M_sl5_1km_ll.tif","Cation exchange capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"70","CECSOL_M_sl6_1km_ll.tif","Cation exchange capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"71","CECSOL_M_sl7_1km_ll.tif","Cation exchange capacity (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"72","CLYPPT_M_sl1_1km_ll.tif","Weight percentage of the Clay particles (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"73","CLYPPT_M_sl2_1km_ll.tif","Weight percentage of the Clay particles (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"74","CLYPPT_M_sl3_1km_ll.tif","Weight percentage of the Clay particles (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"75","CLYPPT_M_sl4_1km_ll.tif","Weight percentage of the Clay particles (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"76","CLYPPT_M_sl5_1km_ll.tif","Weight percentage of the Clay particles (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"77","CLYPPT_M_sl6_1km_ll.tif","Weight percentage of the Clay particles (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"78","CLYPPT_M_sl7_1km_ll.tif","Weight percentage of the Clay particles (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"79","CRFVOL_M_sl1_1km_ll.tif","Coarse fragments (> 2mm) (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"80","CRFVOL_M_sl2_1km_ll.tif","Coarse fragments (> 2mm) (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"81","CRFVOL_M_sl3_1km_ll.tif","Coarse fragments (> 2mm) (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"82","CRFVOL_M_sl4_1km_ll.tif","Coarse fragments (> 2mm) (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"83","CRFVOL_M_sl5_1km_ll.tif","Coarse fragments (> 2mm) (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"84","CRFVOL_M_sl6_1km_ll.tif","Coarse fragments (> 2mm) (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"85","CRFVOL_M_sl7_1km_ll.tif","Coarse fragments (> 2mm) (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"86","OCDENS_M_sl1_1km_ll.tif","Soil organic carbon density (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"87","OCDENS_M_sl2_1km_ll.tif","Soil organic carbon density (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"88","OCDENS_M_sl3_1km_ll.tif","Soil organic carbon density (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"89","OCDENS_M_sl4_1km_ll.tif","Soil organic carbon density (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"90","OCDENS_M_sl5_1km_ll.tif","Soil organic carbon density (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"91","OCDENS_M_sl6_1km_ll.tif","Soil organic carbon density (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"92","OCDENS_M_sl7_1km_ll.tif","Soil organic carbon density (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"93","OCSTHA_M_100cm_1km_ll.tif","Soil organic carbon stock (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"94","OCSTHA_M_200cm_1km_ll.tif","Soil organic carbon stock (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"95","OCSTHA_M_30cm_1km_ll.tif","Soil organic carbon stock (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"96","OCSTHA_M_sd1_1km_ll.tif","Soil organic carbon stock (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"97","OCSTHA_M_sd2_1km_ll.tif","Soil organic carbon stock (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"98","OCSTHA_M_sd3_1km_ll.tif","Soil organic carbon stock (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"99","OCSTHA_M_sd4_1km_ll.tif","Soil organic carbon stock (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"100","OCSTHA_M_sd5_1km_ll.tif","Soil organic carbon stock (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"101","OCSTHA_M_sd6_1km_ll.tif","Soil organic carbon stock (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"102","ORCDRC_M_sl1_1km_ll.tif","Soil organic carbon content (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"103","ORCDRC_M_sl2_1km_ll.tif","Soil organic carbon content (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"104","ORCDRC_M_sl3_1km_ll.tif","Soil organic carbon content (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"105","ORCDRC_M_sl4_1km_ll.tif","Soil organic carbon content (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"106","ORCDRC_M_sl5_1km_ll.tif","Soil organic carbon content (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"107","ORCDRC_M_sl6_1km_ll.tif","Soil organic carbon content (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"108","ORCDRC_M_sl7_1km_ll.tif","Soil organic carbon content (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"109","PHIKCL_M_sl1_1km_ll.tif","pH measured with KCl (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"110","PHIKCL_M_sl2_1km_ll.tif","pH measured with KCl (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"111","PHIKCL_M_sl3_1km_ll.tif","pH measured with KCl (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"112","PHIKCL_M_sl4_1km_ll.tif","pH measured with KCl (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"113","PHIKCL_M_sl5_1km_ll.tif","pH measured with KCl (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"114","PHIKCL_M_sl6_1km_ll.tif","pH measured with KCl (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"115","PHIKCL_M_sl7_1km_ll.tif","pH measured with KCl (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"116","SLTPPT_M_sl1_1km_ll.tif","Weight percentage of the Silt particles (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"117","SLTPPT_M_sl2_1km_ll.tif","Weight percentage of the Silt particles (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"118","SLTPPT_M_sl3_1km_ll.tif","Weight percentage of the Silt particles (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"119","SLTPPT_M_sl4_1km_ll.tif","Weight percentage of the Silt particles (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"120","SLTPPT_M_sl5_1km_ll.tif","Weight percentage of the Silt particles (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"121","SLTPPT_M_sl6_1km_ll.tif","Weight percentage of the Silt particles (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"122","SLTPPT_M_sl7_1km_ll.tif","Weight percentage of the Silt particles (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"123","SNDPPT_M_sl1_1km_ll.tif","Weight percentage of the Sand particles (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"124","SNDPPT_M_sl2_1km_ll.tif","Weight percentage of the Sand particles (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"125","SNDPPT_M_sl3_1km_ll.tif","Weight percentage of the Sand particles (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"126","SNDPPT_M_sl4_1km_ll.tif","Weight percentage of the Sand particles (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"127","SNDPPT_M_sl5_1km_ll.tif","Weight percentage of the Sand particles (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"128","SNDPPT_M_sl6_1km_ll.tif","Weight percentage of the Sand particles (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"129","SNDPPT_M_sl7_1km_ll.tif","Weight percentage of the Sand particles (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"130","WWP_M_sl1_1km_ll.tif","Available soil water capacity (vol) until wilting point (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"131","WWP_M_sl2_1km_ll.tif","Available soil water capacity (vol) until wilting point (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"132","WWP_M_sl3_1km_ll.tif","Available soil water capacity (vol) until wilting point (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"133","WWP_M_sl4_1km_ll.tif","Available soil water capacity (vol) until wilting point (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"134","WWP_M_sl5_1km_ll.tif","Available soil water capacity (vol) until wilting point (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"135","WWP_M_sl6_1km_ll.tif","Available soil water capacity (vol) until wilting point (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"136","WWP_M_sl7_1km_ll.tif","Available soil water capacity (vol) until wilting point (ecoregion median per species, SoilGrids), details in Supplement Tab 2 (Soil data)."
+"137","AnnualMeanTemperature.nc","Temperature (ecoregion median per species, WorldClim), details in Supplement Tab 1 (Climate data)."
+"138","MaxTemperatureofWarmestMonth.nc","Temperature (ecoregion median per species, WorldClim), details in Supplement Tab 1 (Climate data)."
+"139","MinTemperatureofColdestMonth.nc","Temperature (ecoregion median per species, WorldClim), details in Supplement Tab 1 (Climate data)."
+"140","TemperatureSeasonality.nc","Temperature (ecoregion median per species, WorldClim), details in Supplement Tab 1 (Climate data)."
+"141","MeanDiurnalRange.nc","Diurnal temperature range (average, WorldClim), details in Supplement Tab 1 (Climate data)."
+"142","AnnualPrecipitation.nc","Precipitation (ecoregion median per species, WorldClim), details in Supplement Tab 1 (Climate data)."
+"143","PrecipitationofWettestMonth.nc","Precipitation (ecoregion median per species, WorldClim), details in Supplement Tab 1 (Climate data)."
+"144","PrecipitationofDriestMonth.nc","Precipitation (ecoregion median per species, WorldClim), details in Supplement Tab 1 (Climate data)."
+"145","PrecipitationSeasonality.nc","Precipitation (ecoregion median per species, WorldClim), details in Supplement Tab 1 (Climate data)."
+"146","vapr.mean.nc","water vapor pressure (kPa) (ecoregion median per species, WorldClim), details in Supplement Tab 1 (Climate data)."
+"147","vapr.max.nc","water vapor pressure (kPa) (ecoregion median per species, WorldClim), details in Supplement Tab 1 (Climate data)."
+"148","vapr.min.nc","water vapor pressure (kPa) (ecoregion median per species, WorldClim), details in Supplement Tab 1 (Climate data)."
+"149","vapr.sd.nc","water vapor pressure (kPa) (ecoregion median per species, WorldClim), details in Supplement Tab 1 (Climate data)."
+"150","srad.mean.nc","Solar radiation (ecoregion median per species, WorldClim), details in Supplement Tab 1 (Climate data)."
+"151","srad.max.nc","Solar radiation (ecoregion median per species, WorldClim), details in Supplement Tab 1 (Climate data)."
+"152","srad.min.nc","Solar radiation (ecoregion median per species, WorldClim), details in Supplement Tab 1 (Climate data)."
+"153","srad.sd.nc","Solar radiation (ecoregion median per species, WorldClim), details in Supplement Tab 1 (Climate data)."
+"154","wind.mean.nc","Average wind speed (ecoregion median per species, WorldClim), details in Supplement Tab 1 (Climate data)."
+"155","wind.max.nc","Average wind speed (ecoregion median per species, WorldClim), details in Supplement Tab 1 (Climate data)."
+"156","wind.min.nc","Average wind speed (ecoregion median per species, WorldClim), details in Supplement Tab 1 (Climate data)."
+"157","wind.sd.nc","Average wind speed (ecoregion median per species, WorldClim), details in Supplement Tab 1 (Climate data)."
+"158","LeArea_obs","Leaf area (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"159","LeArea_pred","Leaf area (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"160","LeArea_gf","Leaf area (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"161","observation.count.LeArea","Leaf area (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"162","SSD_obs","Stem specific density (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"163","SSD_pred","Stem specific density (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"164","SSD_gf","Stem specific density (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"165","observation.count.SSD","Stem specific density (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"166","SLA_obs","Specific leaf area (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"167","SLA_pred","Specific leaf area (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"168","SLA_gf","Specific leaf area (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"169","observation.count.SLA","Specific leaf area (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"170","LeC_obs","Leaf carbon concentration (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"171","LeC_pred","Leaf carbon concentration (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"172","LeC_gf","Leaf carbon concentration (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"173","observation.count.LeC","Leaf carbon concentration (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"174","LeN_obs","Leaf nitrogen concentration (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"175","LeNArea_obs","Leaf nitrogen per leaf area (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"176","LeNP_obs","Leaf nitrogen/phosphorous concentration ratio (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"177","LeN_pred","Leaf nitrogen concentration (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"178","LeNArea_pred","Leaf nitrogen per leaf area (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"179","LeNP_pred","Leaf nitrogen/phosphorous concentration ratio (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"180","LeN_gf","Leaf nitrogen concentration (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"181","LeNArea_gf","Leaf nitrogen per leaf area (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"182","LeNP_gf","Leaf nitrogen/phosphorous concentration ratio (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"183","observation.count.LeN","Leaf nitrogen concentration (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"184","observation.count.LeNArea","Leaf nitrogen per leaf area (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"185","observation.count.LeNP","Leaf nitrogen/phosphorous concentration ratio (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"186","LeP_obs","Leaf phosphorous concentration (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"187","LeP_pred","Leaf phosphorous concentration (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"188","LeP_gf","Leaf phosphorous concentration (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"189","observation.count.LeP","Leaf phosphorous concentration (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"190","PlantHeight_obs","Plant height (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"191","PlantHeight_pred","Plant height (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"192","PlantHeight_gf","Plant height (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"193","observation.count.PlantHeight","Plant height (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"194","SeedMass_obs","Seed mass (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"195","SeedMass_pred","Seed mass (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"196","SeedMass_gf","Seed mass (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"197","observation.count.SeedMass","Seed mass (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"198","SeLen_obs","Seed length (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"199","SeLen_pred","Seed length (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"200","SeLen_gf","Seed length (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"201","observation.count.SeLen","Seed length (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"202","LeNArea_obs.1","Leaf nitrogen per leaf area (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"203","LeNArea_pred.1","Leaf nitrogen per leaf area (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"204","LeNArea_gf.1","Leaf nitrogen per leaf area (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"205","observation.count.LeNArea.1","Leaf nitrogen per leaf area (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"206","LeNP_obs.1","Leaf nitrogen/phosphorous concentration ratio (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"207","LeNP_pred.1","Leaf nitrogen/phosphorous concentration ratio (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"208","LeNP_gf.1","Leaf nitrogen/phosphorous concentration ratio (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"209","observation.count.LeNP.1","Leaf nitrogen/phosphorous concentration ratio (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"210","Led15N_obs","Leaf delta 15N (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"211","Led15N_pred","Leaf delta 15N (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"212","Led15N_gf","Leaf delta 15N (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"213","observation.count.Led15N","Leaf delta 15N (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"214","SenbU_obs","Seeds per dispersal unit (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"215","SenbU_pred","Seeds per dispersal unit (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"216","SenbU_gf","Seeds per dispersal unit (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"217","observation.count.SenbU","Seeds per dispersal unit (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"218","LeFMass_obs","Leaf fresh mass (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"219","LeFMass_pred","Leaf fresh mass (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"220","LeFMass_gf","Leaf fresh mass (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"221","observation.count.LeFMass","Leaf fresh mass (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"222","ConduitDens_obs","Conduit density (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"223","ConduitDens_pred","Conduit density (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"224","ConduitDens_gf","Conduit density (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"225","observation.count.ConduitDens","Conduit density (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"226","DispULen_obs","Dispersal unit lenth (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"227","DispULen_pred","Dispersal unit lenth (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"228","DispULen_gf","Dispersal unit lenth (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"229","observation.count.DispULen","Dispersal unit lenth (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"230","VesLen_obs","Vessel element lenth (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"231","VesLen_pred","Vessel element lenth (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"232","VesLen_gf","Vessel element lenth (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
+"233","observation.count.VesLen","Vessel element lenth (ecoregion median per species; TRY-db.org, see Supplement Tab.5), obs: as observed, pred: from BHPMF, gf: combination of observed and predicted."
